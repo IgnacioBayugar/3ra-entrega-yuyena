@@ -1,0 +1,119 @@
+/* Reset */
+*{
+    font-family: "Lora", serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffb15a;
+}
+/* Estilo de titulo */
+.h1v1{
+    color: #9c4544;
+    font-size: xx-large;
+    text-align: center;
+    margin: 2px;
+    margin-bottom: -10px;
+}
+.h2v1{
+    color: #9c4544;
+    font-size: larger;
+    text-align: center;
+    margin-top: -10px;
+}
+/* Titulos secundarios y terciarios */
+h2{
+    color: #9c4544;
+    font-size: larger;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+h3{
+    color: #9c4544;
+    font-size: larger;
+    text-align: center;
+    margin: 10px;
+}
+/* Barra de navegacion */
+.navbar ul{
+    list-style-type: none;
+    background-color: #ffb15a;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.navbar li{
+    display: inline-flex;
+    outline-style: groove;
+    outline-color: #9c4544;
+    outline-width: 1px;
+}
+.navbar a{
+    color: #9c4544;
+    text-decoration: none;
+    padding: 8px 20px;
+    display: block;
+}
+.navbar a:hover{
+    background-color: #9c4544;
+    color: #9c4544;
+} 
+/*Imagenes representativas - Portfolio*/
+img{
+    display: block;
+    width: 200px;
+    height: 226px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Parrafos descriptivos - Portfolio */
+.portfoliosection{
+    display: flex;
+    justify-content: space-between;
+}
+.portfolioitems{ 
+    width: 454px;
+    height: auto;
+    outline-style: groove;
+    outline-color: #9c4544;
+    outline-width: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.portfoliotext{
+    margin: 35px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+/* Parrafos descriptivos - Sobre mi/Contacto */
+.commondivs{
+    display: inline-flexbox;
+    outline-style: groove;
+    outline-color: #9c4544;
+    outline-width: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.commontext{
+    margin: 100px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+/* Boton "conocer mas" */
+button{
+    color: white;
+    text-decoration: none;
+    background-color: #9c4544;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+/* Pie de página */
+.socialmedia{
+    margin-top: 10px;
+    text-align: center;
+}
