@@ -3,122 +3,34 @@
     font-family: "Lora", serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #ffb15a;
+    background-color: white;
 }
-/* Estilo de titulo */
-.h1v1{
-    color: #9c4544;
-    font-size: xx-large;
-    text-align: center;
-    margin: 2px;
-    margin-bottom: -10px;
+/*Navbar*/
+.container-fluid{
+    --bs-gutter-x: 0;
 }
-.h2v1{
-    color: #9c4544;
-    font-size: larger;
-    text-align: center;
-    margin-top: -10px;
+/*Banner*/
+.ib-bannerimg{
+    width: 100%;
+    height: 100px;
 }
-/* Titulos secundarios y terciarios */
-h2{
-    color: #9c4544;
-    font-size: larger;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
+/*Galeria*/
 
-h3{
-    color: #9c4544;
-    font-size: larger;
-    text-align: center;
-    margin: 10px;
+/* Estilo cards*/
+.ib-card{
+    width: 18rem;
+    --bs-card-border-color: #9c4544;
+    --bs-card-border-radius: 0px;
 }
 /* Barra de navegacion */
-.navbar{
-    justify-content: center;
-    padding: 0;
-    outline-style: groove;
-    outline-color: #9c4544;
-    outline-width: 2px;
-}
-.navbar ul{
-    list-style-type: none;
-    background-color: #ffb15a;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-.navbar li{
-    display: inline-flex;
-}
-.navbar a{
-    color: #9c4544;
-    text-decoration: none;
-    padding: 8px 20px;
-    display: block;
-}
-.navbar a:hover{
-    background-color: #9c4544;
-    color: #ffb15a;
-} 
+
 /*Imagenes representativas - Portfolio*/
 img{
-    display: block;
     width: 200px;
     height: 226px;
-    margin: 0 auto;
-    margin-top: 10px;
-    border-radius: 20px;
-    outline-style: groove;
     outline-color: #9c4544;
 }
-/* Parrafos descriptivos - Portfolio */
-.portfoliosection{
-    display: flex;
-    justify-content: space-between;
-}
-.portfolioitems{ 
-    width: 454px;
-    height: auto;
-    outline-style: groove;
-    outline-color: #9c4544;
-    outline-width: 2px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-.portfoliotext{
-    margin: 35px;
-    text-align: justify;
-    margin-bottom: 30px;
-}
-/* Parrafos descriptivos - Sobre mi/Contacto */
-.commondivs{
-    display: inline-flexbox;
-    outline-style: groove;
-    outline-color: #9c4544;
-    outline-width: 2px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-.commontext{
-    margin: 100px;
-    text-align: justify;
-    margin-bottom: 30px;
-}
-/* Boton "conocer mas" */
-button{
-    color: #ffb15a;
-    text-decoration: none;
-    background-color: #9c4544;
-    display: block;
-    margin: 0 auto;
-    padding: 8px 20px;
-    margin-bottom: 20px;
-    outline-style: none;
-}
-/* Pie de página */
+
 .socialmedia{
     margin-top: 10px;
     text-align: center;

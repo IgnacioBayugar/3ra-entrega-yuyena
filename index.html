@@ -13,53 +13,80 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Inicio - Yuyena</title>
 </head>
-<body>
-    <header>
-        <section>
-            <!--Titulo/Logo-->
-         <h1 class="h1v1">YUYENA</h1>
-         <h2 class="h2v1">PASTELERIA</h2>
-            <!--Menu de navegacion-->
-            <nav class="navbar">
-                <ul>
-                 <li><a href="./index.html">Portfolio</a></li>
-                 <li><a href="./html/sobremi.html">Sobre mi</a></li>
-                 <li><a href="./html/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
-    <main>
-       <section class="portfoliosection">
-
-            <article class="portfolioitems">
-             <h3>Tortas</h3>
-                 <img src="./assets/torta1_portfolio.jpg" alt="torta">
-                 <p class="portfoliotext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, porro deleniti quaerat animi necessitatibus adipisci, ratione repudiandae recusandae unde ipsam facilis sed culpa labore tempore doloremque!</p>
-             <button>Ver más</button>
-           </article>
-
-           <article class="portfolioitems">
-             <h3>Masas dulces</h3>
-                 <img class="img2" src="./assets/masasdulces_portfolio.jpg" alt="dulces varios">
-                 <p class="portfoliotext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga nobis suscipit facilis iusto cum expedita beatae sint sunt, distinctio at quas adipisci accusantium minima maxime veniam consequuntur voluptates corrupti.</p>
-             <button>Ver más</button>
-           </article>
-
-           <article class="portfolioitems">
-             <h3>Budines festivos</h3>
-                 <img class="img3" src="./assets/budines_portfolio.jpg" alt="budines">
-                 <p class="portfoliotext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit debitis fugiat nobis optio laboriosam, itaque doloremque velit quis recusandae excepturi blanditiis maiores esse, tempore, necessitatibus ullam quo ducimus quasi perferendis.</p>
-             <button>Ver más</button>
-           </article>
-
-       </section>
-    </main>
-    <footer>
-        <div>
-            <p class="socialmedia">Whatsapp 000-0000-0000 | Instagram yuyena_pasteleria | Facebook yuyenapasteleria</p>
-        </div>
-    </footer>
+<body class="body">
+    <div class="container-fluid">
+        <header>
+            <section>
+                <article>
+                    <nav class="navbar navbar-expand-lg p-2 m-2">
+                        <div class="container-fluid">
+                        <a class="navbar-brand" href="./index.html">Yuyena</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./html/sobremi.html">Sobre mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./html/contacto.html">Contacto</a>
+                            </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </nav>
+                </article>
+                <article class="container-fluid">
+                    <img class="ib-bannerimg" src="./assets/bannerv2.jpg" alt="">
+                </article>
+            </section>
+        </header>
+        <main>
+            <section class="gallery d-flex justify-content-between border border-start-0 border-end-0">
+                <div class="card ib-card ">
+                    <img src="./assets/masasdulces_portfolio.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Catering de postres</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card ib-card">
+                    <img src="./assets/torta1_portfolio.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Tortas personalizadas</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card ib-card">
+                    <img src="./assets/muffins_portfolio.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Box dulces</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card ib-card">
+                    <img src="./assets/budines_portfolio.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Postres festivos</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn">Ver más</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <p class="socialmedia">Whatsapp 000-0000-0000 | Instagram yuyena_pasteleria | Facebook yuyenapasteleria</p>
+            </div>
+        </footer>
+    </div>
     <!--SCRIPT BS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
