@@ -13,77 +13,108 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Inicio - Yuyena</title>
 </head>
-<body class="body">
-    <div class="ib-generalcontainer container-fluid">
-        <header>
+<body class="ib-body body">
+    <div class="ib-container container-fluid text-center">
+        <header class="row">
             <section>
-                <nav class="ib-navbar navbar navbar-expand-lg p-2 my-2">
+                <nav class="ib-navbar navbar navbar-expand-lg p-2 mt-2 mb-4">
                     <div class="container-fluid">
-                    <a class="navbar-brand px-3" href="./index.html">Yuyena</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <a class="navbar-brand px-3" href="./index.html">Yuyena</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="ib-a mx-2 nav-link" aria-current="page" href="index.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
+                      </button>
+                      <div class="d-flex justify-content-end collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="ib-a mx-2 nav-link" href="index.html">Portfolio</a>
+                          </li>
+                          <li class="nav-item">
                             <a class="ib-a mx-2 nav-link" href="./html/sobremi.html">Sobre mi</a>
-                        </li>
-                        <li class="nav-item">
+                          </li>
+                          <li class="nav-item">
                             <a class="ib-a mx-2 nav-link" href="./html/contacto.html">Contacto</a>
-                        </li>
+                          </li>
                         </ul>
-                    </div>
+                      </div>
                     </div>
                 </nav>
             </section>
         </header>
-        <main>
-            <section class="gallery d-flex justify-content-evenly py-4">
-                <div class="card ib-card ">
-                    <img src="./assets/masasdulces_portfolio.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Catering de postres</h5>
+        <main class="row">
+            <section class="ib-gallery d-flex justify-content-evenly pb-2">
+                <article class="card ib-card">
+                    <img src="./assets/muffins_portfolio.jpg" class="ib-card-img card-img-top" alt="...">
+                    <div class="card-body px-2">
+                      <h5 class="card-title">Mesas dulces</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Ver más</a>
+                      <a href="#" class="ib-btn btn px-2 py-0">Ver más</a>
                     </div>
-                </div>
-                <div class="card ib-card">
-                    <img src="./assets/torta1_portfolio.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                </article>
+                <article class="card ib-card">
+                    <img src="./assets/torta1_portfolio.jpg" class="ib-card-img card-img-top" alt="...">
+                    <div class="card-body px-2">
                       <h5 class="card-title">Tortas personalizadas</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Ver más</a>
+                      <a href="#" class="ib-btn btn px-2 py-0">Ver más</a>
                     </div>
-                </div>
-                <div class="card ib-card">
-                    <img src="./assets/muffins_portfolio.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Box dulces</h5>
+                </article>
+                <article class="card ib-card">
+                    <img src="./assets/masasdulces_portfolio.jpg" class="ib-card-img card-img-top" alt="...">
+                    <div class="card-body px-2">
+                      <h5 class="card-title">Box postres</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Ver más</a>
+                      <a href="#" class="ib-btn btn px-2 py-0">Ver más</a>
                     </div>
-                </div>
-                <div class="card ib-card">
-                    <img src="./assets/budines_portfolio.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Postres festivos</h5>
+                </article>
+                <article class="card ib-card">
+                    <img src="./assets/budines_portfolio.jpg" class="ib-card-img card-img-top" alt="...">
+                    <div class="card-body px-2">
+                      <h5 class="card-title">Cursos<span class="ib-badge badge text-bg-danger mx-2 px-1 py-0">Nuevo!</span></h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn">Ver más</a>
+                      <a href="#" class="ib-btn btn px-2 py-0">Ver más</a>
                     </div>
-                </div>
+                </article>
             </section>
         </main>
         <footer>
-            <div class="ib-footer container-fluid">
-                <p class="socialmedia">Whatsapp 000-0000-0000 | Instagram yuyena_pasteleria | Facebook yuyenapasteleria</p>
+          <div class="ib-socialnet-card card mb-3 text-start mt-3">
+            <div class="row g-0">
+              <div class="col-md-1">
+                <img src="./assets/whatsapp_icon.png" class="ib-socialnet-img img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-3">
+                <div class="card-body p-1">
+                  <h5 class="card-title m-0">Card title</h5>
+                  <p class="card-text">This is a wider card.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="col-md-1">
+                <img src="./assets/Instagram_icon.png.webp" class="ib-socialnet-img img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-3">
+                <div class="card-body p-1">
+                  <h5 class="card-title m-0">Card title</h5>
+                  <p class="card-text">This is a wider card.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="col-md-1">
+                <img src="./assets/facebook_icon.png" class="ib-socialnet-img img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-3">
+                <div class="card-body p-1">
+                  <h5 class="card-title m-0">Card title</h5>
+                  <p class="card-text">This is a wider card.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
             </div>
+          </div>
         </footer>
     </div>
     <!--SCRIPT BS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootst ab@2.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>

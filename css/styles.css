@@ -4,6 +4,11 @@
     margin: 0;
     padding: 0;
 }
+.ib-body{
+    background-image: url(../assets/bannerv3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*Navbar*/
 .container-fluid{
     --bs-gutter-x: 0;
@@ -12,27 +17,41 @@
     background-color: white;
     --bs-navbar-brand-font-size: 1.5rem;
 }
+.ib-a{
+    border-radius: 4px;
+}
 .ib-a:hover{
     background-color: #403f6f;
     color: white;
+    border-radius: 4px;
 }
 
 /*Galeria*/
-.gallery{
+.ib-gallery{
+    flex-wrap: wrap;
     background-color: none;
-}
-.ib-generalcontainer{
-    background-image: url(../assets/bannerv3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
 }
 /* Estilo cards*/
 .ib-card{
-    width: 18rem;
+    width: 16.8rem;
+    height: 26rem;
     --bs-card-border-color: white;
-    --bs-card-border-radius: 15px;
-    --bs-card-inner-border-radius: 15px;
+    --bs-card-border-width: 8px;
+    --bs-card-border-radius: 8px;
+    --bs-card-inner-border-radius: 8px;
+}
+.ib-card-img{
+    height: 210px;
+}
+.ib-btn{
+    border-radius: 5px;   
+    outline-style: groove;
+    outline-width: 2px;
+    outline-color: #403f6f;
+}
+.ib-btn:hover{
+    background-color: #403f6f;
+    color: white;
 }
 /* Barra de navegacion */
 
@@ -42,12 +61,10 @@ img{
     height: 226px;
     outline-color: #9c4544;
 }
-.ib-footer{
-    color: #403f6f;
-    background-color: white;
-    padding: 0px;
+.ib-socialnet-card{
+    --bs-card-height: 80px;
 }
-.socialmedia{
-    margin-top: 10px;
-    text-align: center;
+.ib-socialnet-img{
+    height: 60px;
+    width: 60px;
 }
