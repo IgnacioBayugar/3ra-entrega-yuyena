@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,42 +14,109 @@
     <title>Inicio - Yuyena</title>
 </head>
 <body class="ib-body body">
-  <header>
-    <section>
-      <nav class="ib-navbar navbar navbar-expand-lg p-2 mt-2 mb-4">
-          <div class="container-fluid">
-          <a class="navbar-brand px-3" href="../index.html">Yuyena</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                  <a class="ib-a mx-2 nav-link" href="../index.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                  <a class="ib-a mx-2 nav-link" href="./sobremi.html">Sobre mi</a>
-              </li>
-              <li class="nav-item">
-                  <a class="ib-a mx-2 nav-link" href="./contacto.html">Contacto</a>
-              </li>
-              </ul>
+  <div class="ib-container container-fluid">
+    <header class="row">
+      <section class="d-flex ib-navbar p-2">
+          <article class="col-md-4 d-flex align-items-center justify-content-center">
+            <h1 class="ib-title">Yuyena Pastelería</h1>
+          </article>
+          <article class="col-md-6">
+            <nav class="navbar navbar-expand-lg p-2">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>              
+                  <div class="justify-content-end collapse navbar-collapse pe-5" id="navbarSupportedContent">
+                    <div class="btn-group">
+                      <a href="../index.html" class="ib-navbar-btn btn">Portfolio</a>
+                      <a href="./sobremi.html" class="ib-navbar-btn btn ib-active" aria-current="page">Sobre mi</a>
+                      <a href="./contacto.html" class="ib-navbar-btn btn">Contacto</a>
+                    </div>
+                  </div>
+            </nav>
+          </article>
+        </section>
+    </header>
+    <main class="row mt-5 mb-4">
+        <div class="col-md-7 d-flex align-items-start justify-content-center">
+            <div class="card ib-hcard my-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../assets/fotoautora_sobremi.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Miriam Farias</h5>
+                    <p class="card-text">Soy Miriam, una pastelera apasionada por hacer tortas y dulces deliciosos para todo tipo de celebraciones. Me encanta crear opciones frescas, personalizadas y llenas de sabor para que cada momento sea más especial.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-5 my-3 d-flex align-items-center justify-content-start">
+          <div id="carouselExampleIndicators" class="carousel slide ib-carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/masasdulces_portfolio.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/muffins_portfolio.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/torta1_portfolio.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          </div>
-      </nav>
-  </section>
-  </header>
-  <main>
-      <div class="commondivs">
-          <h3>Miriam Farias</h3>
-          <img class="img4" src="../assets/fotoautora_sobremi.jpg" alt="autora">
-          <p class="commontext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quos obcaecati nobis ut accusantium quaerat magni itaque quasi maiores, nihil recusandae quae labore odio sequi voluptatibus neque laboriosam! Enim, velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iusto quis veniam molestias architecto reprehenderit exercitationem ex voluptatibus beatae officia, voluptatum nam corrupti officiis, est delectus vero nemo mollitia fugiat?</p>
-      </div>
-  </main>
-  <footer>
-      <div>
-          <p class="socialmedia">Whatsapp 000-0000-0000 | Instagram yuyena_pasteleria | Facebook yuyenapasteleria</p>
-      </div>
-  </footer>
+        </div>
+    </main>
+    <footer class="row mb ib-socialnet-card p-2">
+      <article class="col-md-2 d-flex justify-content-center pt-1 fs-6">
+        <p class="ib-socialnet-text">Seguime en mis redes:</p>
+      </article>
+      <article class="col-md-2 d-flex align-items-center">
+        <img src="../assets/whatsapp_icon.png" class="ib-socialnet-img img-fluid rounded-start" alt="...">
+        <div class="card-body p-1">
+          <h5 class="card-text ib-socialnet-text m-0">Whatsapp:</h5>
+          <p class="card-text ib-socialnet-text">000-0000-0000</p>
+        </div>
+      </article>
+      <article class="col-md-2 d-flex align-items-center">
+        <img src="../assets/Instagram_icon.png.webp" class="ib-socialnet-img img-fluid rounded-start" alt="...">
+        <div class="card-body p-1">
+          <h5 class="card-text ib-socialnet-text m-0">Instagram:</h5>
+          <p class="card-text ib-socialnet-text ps-1">@usuario_1</p>
+        </div>
+      </article>
+      <article class="col-md-2 d-flex align-items-center">
+        <img src="../assets/facebook_icon.png" class="ib-socialnet-img" alt="...">
+        <div class="card-body p-1">
+          <h5 class="card-text ib-socialnet-text m-0">Facebook:</h5>
+          <p class="card-text ib-socialnet-text ps-1">@usuario_2</p>
+        </div>
+      </article>
+      <article class="col-md-3 d-flex justalign-items-center p-1">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Espero tu comentario!" aria-label="Search">
+          <button class="ib-btn-footer btn overflow-visible" type="submit">Enviar</button>
+        </form>          
+      </article>
+    </footer>
+  </div>
+    <!--SCRIPT BS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootst ab@2.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

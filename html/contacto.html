@@ -15,41 +15,68 @@
 </head>
 <body class="ib-body body">
     <header>
-      <section>
-        <nav class="ib-navbar navbar navbar-expand-lg p-2 mt-2 mb-4">
-            <div class="container-fluid">
-            <a class="navbar-brand px-3" href="../index.html">Yuyena</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="ib-a mx-2 nav-link" href="../index.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="ib-a mx-2 nav-link" href="./sobremi.html">Sobre mi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="ib-a mx-2 nav-link" href="./contacto.html">Contacto</a>
-                </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-    </section>
+        <section class="d-flex ib-navbar p-2">
+            <article class="col-md-4 d-flex align-items-center justify-content-center">
+              <h1 class="ib-title">Yuyena Pastelería</h1>
+            </article>
+            <article class="col-md-6">
+              <nav class="navbar navbar-expand-lg p-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>              
+                    <div class="justify-content-end collapse navbar-collapse pe-5" id="navbarSupportedContent">
+                      <div class="btn-group">
+                        <a href="../index.html" class="ib-navbar-btn btn">Portfolio</a>
+                        <a href="./sobremi.html" class="ib-navbar-btn btn">Sobre mi</a>
+                        <a href="./contacto.html" class="ib-navbar-btn btn ib-active" aria-current="page">Contacto</a>
+                      </div>
+                    </div>
+              </nav>
+            </article>
+          </section>
     </header>
-    <main>
-        <div class="commondivs">
-        <h3>Ubicación</h3>
-            <img src="../assets/mapa_contacto.jpg" alt="ubicacion">
-            <p class="commontext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque excepturi ipsam ad explicabo iusto, maiores, fugiat ratione ipsa, assumenda quam aliquid est. Earum nobis nam natus eveniet saepe quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ab totam aliquid nulla explicabo, repellat voluptas iure? Dolore reprehenderit ex, nisi libero, assumenda, dolor dolorum quibusdam at quis id iste?</p>
-        </div>
+    <main class="row d-flex justify-content-center">
+        <div class="card ib-ubicard mt-5 mb-4">
+            <img src="../assets/mapa_contacto.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cómo llegar</h5>
+              <p class="card-text">Estoy en [Dirección exacta], en el centro de [Nombre de la ciudad]. Me encontrarás cerca de [referencia local]. ¡Te espero con mucho gusto para que disfrutes de nuestras delicias!</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          
     </main>
-    <footer>
-        <div>
-            <p class="socialmedia">Whatsapp 000-0000-0000 | Instagram yuyena_pasteleria | Facebook yuyenapasteleria</p>
-        </div>
+    <footer class="row mb ib-socialnet-card p-2">
+        <article class="col-md-2 d-flex justify-content-center pt-1 fs-6">
+            <p class="ib-socialnet-text">Seguime en mis redes:</p>
+          </article>
+          <article class="col-md-2 d-flex align-items-center">
+            <img src="../assets/whatsapp_icon.png" class="ib-socialnet-img img-fluid rounded-start" alt="...">
+            <div class="card-body p-1">
+              <h5 class="card-text ib-socialnet-text m-0">Whatsapp:</h5>
+              <p class="card-text ib-socialnet-text">000-0000-0000</p>
+            </div>
+          </article>
+          <article class="col-md-2 d-flex align-items-center">
+            <img src="../assets/Instagram_icon.png.webp" class="ib-socialnet-img img-fluid rounded-start" alt="...">
+            <div class="card-body p-1">
+              <h5 class="card-text ib-socialnet-text m-0">Instagram:</h5>
+              <p class="card-text ib-socialnet-text ps-1">@usuario_1</p>
+            </div>
+          </article>
+          <article class="col-md-2 d-flex align-items-center">
+            <img src="../assets/facebook_icon.png" class="ib-socialnet-img" alt="...">
+            <div class="card-body p-1">
+              <h5 class="card-text ib-socialnet-text m-0">Facebook:</h5>
+              <p class="card-text ib-socialnet-text ps-1">@usuario_2</p>
+            </div>
+          </article>
+          <article class="col-md-3 d-flex justalign-items-center p-1">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Espero tu comentario!" aria-label="Search">
+              <button class="ib-btn-footer btn overflow-visible" type="submit">Enviar</button>
+            </form>          
+          </article>
     </footer>
 </body>
 </html>
