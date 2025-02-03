@@ -1,23 +1,12 @@
-/* Reset */
+/* reset */
 *{
     font-family: "Lora", serif;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-.ib-body{
-    background-image: url(../assets/fondo_general\ \(3\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-} 
-.ib-carousel{
-    max-width: 18.6rem;
-    max-height: 25.5rem;
-}
-/*Navbar*/
-.container-fluid{
-    --bs-gutter-x: 0;
-}
+/*HEADER - general*/
+/*navbar*/
 .ib-navbar{
     background-color: #65524D;
 }
@@ -38,26 +27,27 @@
 .ib-active{
     background-color: #eb8751;
 }
-/*Galeria*/
+/*BODY general*/
+.ib-body{
+    background-image: url(../assets/fondo_general\ \(3\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+/*inicio - <main>*/
+/*galeria*/
 .ib-gallery{
     flex-wrap: wrap;
     background-color: none;
 }
-/* Estilo cards*/
-
+/*cards*/
 .ib-card{
     background-color: #65524D;
     color: white;
     width: 16.5rem;
     height: 25.5rem;
-    --bs-card-border-style: groove;
-    --bs-card-border-color: #F49867;
-    --bs-card-border-width: 2px;
-    --bs-card-border-radius: 10px;
     box-shadow:2px 2px 15px 1px #0000008f;
 }
 .ib-card-img{
-    --bs-card-inner-border-radius: 25px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -67,7 +57,6 @@
 .ib-card-text{
     font-size: 0.9rem;
 }
-
 .ib-btn{
     border-radius: 10px;
     color: #65524D;
@@ -77,8 +66,8 @@
     background-color: #fcad83;
     color: #65524D;
 }
-/* Barra de navegacion */
-
+/*sobre mi - <main>*/
+/*cards*/
 .ib-hcard{
     max-width: 540px;
     background-color: #65524D;
@@ -86,9 +75,9 @@
     --bs-card-border-style: groove;
     --bs-card-border-color: #F49867;
     --bs-card-border-width: 2px;
-    --bs-card-border-radius: 10px;
     box-shadow: 2px 2px 15px 1px #0000008f;
 }
+/*carousel*/
 .ib-carousel{
     max-width: 20rem;
     max-height: 25rem;
@@ -96,10 +85,18 @@
     border-style: groove;
     border-color: #F49867;
 }
+/*contacto - <main>*/
+/*card*/
 .ib-ubicard{
     max-width: 65%;
+    background-color: #65524D;
+    color: white;
+    --bs-card-border-style: groove;
+    --bs-card-border-color: #F49867;
+    --bs-card-border-width: 2px;
+    box-shadow:2px 2px 15px 1px #0000008f;
 }
-/*Imagenes representativas - Portfolio*/
+/*FOOTER - general*/
 .ib-socialnet-card{
     background-color: #65524D;
 }
@@ -117,6 +114,26 @@
     border-radius: 5px;
 }
 .ib-btn-footer:hover{
-    background-color: #eb8751;
+    background-color: #fcad83;
     color: #65524D;
 }
+/*MEDIA QUERIES*/
+@media (max-width: 768px) {
+   /*RESET*/
+    *{
+        overflow: scroll;
+    }
+  }
+@media (max-width: 576px) {
+    /*inicio - cards*/
+    .ib-card{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    /*contacto - card*/
+    .ib-ubicard{
+        max-width: 100%;
+        height: fit-content;
+    }
+  }
+  
