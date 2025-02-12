@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ignab": "sass --watch scss/main.scss css/main.css"
+    "ignab": "sass --watch sass/styles.scss css/main.css"
 
   },
   "repository": {
