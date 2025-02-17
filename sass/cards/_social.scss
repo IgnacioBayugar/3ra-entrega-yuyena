@@ -1,0 +1,14 @@
+.ib-card-socials{
+    h5{
+        font-size: medium;
+        color: white;
+    }
+    p{
+        font-size: map-get($txt-common, fs);
+        color: white;
+    }
+    img{
+        height: 25px;
+        width: 25px;
+    }
+}

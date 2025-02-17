@@ -1,0 +1,198 @@
+* {
+  font-family: "Lora", serif;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.ib-nav {
+  background-color: #65524D;
+}
+.ib-nav h1 {
+  font-size: xx-large;
+  color: #F49867;
+  overflow: hidden;
+}
+.ib-nav a {
+  color: #65524D;
+  background-color: #F49867;
+  border-radius: 4px;
+}
+.ib-nav a:hover {
+  color: #65524D;
+  background-color: #fcad83;
+  outline-style: none;
+}
+.ib-nav a.ib-active {
+  background-color: #e49062;
+}
+
+.ib-body {
+  background-image: url(../assets/fondo_general\ \(3\).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ib-gallery {
+  flex-wrap: wrap;
+  background-color: none;
+}
+
+.ib-footer {
+  background-color: #65524D;
+  max-height: 65px;
+  overflow: hidden;
+}
+
+.ib-card {
+  width: 600px;
+  height: 242px;
+  background-color: #65524D;
+  color: white;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5607843137);
+}
+.ib-card img {
+  width: 179px;
+  height: 240px;
+}
+.ib-card p {
+  font-size: 1rem;
+}
+.ib-card a {
+  border-radius: 10px;
+  color: #65524D;
+  background-color: #F49867;
+}
+.ib-card a:hover {
+  background-color: #fcad83;
+  color: #65524D;
+}
+
+.ib-hcard {
+  width: 530px;
+  height: 236px;
+  background-color: #65524D;
+  color: white;
+  margin-bottom: -2px;
+  border-radius: 0px;
+}
+
+.ib-card-socials h5 {
+  font-size: medium;
+  color: white;
+}
+.ib-card-socials p {
+  font-size: 1rem;
+  color: white;
+}
+.ib-card-socials img {
+  height: 25px;
+  width: 25px;
+}
+
+.ib-hcard-location {
+  max-width: 70%;
+  height: 450px;
+  background-color: #65524D;
+  color: white;
+  box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.5607843137);
+  border-radius: 0px;
+}
+.ib-hcard-location img {
+  border-radius: 0px;
+  height: 230px;
+}
+
+div .ib-titlecard {
+  width: 530px;
+  background-color: #65524D;
+}
+div .ib-titlecard h2 {
+  color: white;
+  font-size: large;
+}
+
+div .ib-titlecard-alt {
+  width: 530px;
+  background-color: #65524D;
+}
+div .ib-titlecard-alt h2 {
+  color: white;
+  font-size: large;
+}
+
+.ib-hcard-alt {
+  width: 530px;
+  height: 238px;
+  background-color: #65524D;
+  color: white;
+  border-radius: 0px;
+}
+.ib-hcard-alt a {
+  color: #65524D;
+  background-color: #F49867;
+  border-radius: 4px;
+  border-style: none;
+}
+.ib-hcard-alt a:hover {
+  color: #65524D;
+  background-color: #fcad83;
+  outline-style: none;
+}
+
+.ib-form div {
+  background-color: #65524D;
+  width: 530px;
+}
+.ib-form h2 {
+  font-size: medium;
+  color: white;
+}
+.ib-form button {
+  background-color: #F49867;
+  color: #65524D;
+}
+.ib-form button:hover {
+  background-color: #fcad83;
+  color: #65524D;
+}
+
+.ib-accordion {
+  width: 530px;
+  border-top-style: groove;
+  border-top-color: white;
+  border-top-width: 1px;
+}
+.ib-accordion div {
+  background-color: #65524D;
+  color: white;
+}
+.ib-accordion h2 {
+  background-color: #65524D;
+  color: white;
+}
+.ib-accordion button {
+  background-color: #65524D;
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #65524D;
+  color: white;
+}
+
+.ib-carousel {
+  max-width: 530px;
+  max-height: 238px;
+  overflow: hidden;
+}
+.ib-carousel div.ib-titlecard {
+  background-color: #65524D;
+}
+.ib-carousel h2 {
+  color: white;
+  font-size: medium;
+}
+
+/*# sourceMappingURL=main.css.map */

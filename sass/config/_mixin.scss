@@ -1,0 +1,10 @@
+@mixin card($w, $h){
+    width: $w;
+    height: $h;
+    background-color: $brown;
+    color: white;
+}
+@mixin bcard{
+    background-color: $brown;
+    color: white;
+}

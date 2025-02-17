@@ -1,0 +1,11 @@
+.ib-hcard-location{
+    max-width: 70%;
+    height: 450px;
+    @include bcard;
+    box-shadow:2px 2px 15px 1px #0000008f;
+    border-radius: 0px;
+    img{
+        border-radius: 0px;
+        height: 230px;
+    }
+}

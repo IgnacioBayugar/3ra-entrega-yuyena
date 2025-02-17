@@ -1,0 +1,18 @@
+.ib-form{
+    div{
+        background-color: $brown;
+        width: 530px;
+    }
+    h2{
+        font-size: medium;
+        color: white;
+    }
+    button{
+        background-color: $orange;
+        color: $brown;
+        &:hover{
+            background-color: $hoverorange;
+            color: $brown;
+        }
+    }
+}

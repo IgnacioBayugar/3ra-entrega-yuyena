@@ -1,0 +1,15 @@
+.ib-hcard-alt{
+    @include card (530px, 238px);
+    border-radius: 0px;
+    a{
+        color: $brown;
+        background-color: $orange;
+        border-radius: 4px;
+        border-style: none;
+        &:hover{
+            color: $brown;
+            background-color: $hoverorange;
+            outline-style: none;
+        }
+    }
+}

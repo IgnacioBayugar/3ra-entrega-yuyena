@@ -1,0 +1,22 @@
+.ib-accordion{
+    width: 530px;
+    border-top-style: groove;
+    border-top-color: white;
+    border-top-width: 1px;
+    div{
+        background-color: $brown;
+        color: white;
+    }
+    h2{
+        background-color: $brown;
+        color: white;
+    }
+    button{
+        background-color: $brown;
+        color: white;
+    }
+}
+.accordion-button:not(.collapsed){
+    background-color: $brown;
+    color: white;
+}

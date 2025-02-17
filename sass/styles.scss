@@ -1,0 +1,23 @@
+//reset
+//config
+@import './config/colors';
+@import './config/tipo';
+@import './config/reset';
+@import './config/mixin';
+//layout
+@import './layout/navbar';
+@import './layout/background';
+@import './layout/gallery';
+@import './layout/footer';
+//cards
+@import './cards/product';
+@import './cards/horizontal';
+@import './cards/social';
+@import './cards/location';
+@import './cards/specialicedtitle';
+@import './cards/aside';
+//components
+@import './components/form';
+@import './components/accordion';
+@import './components/carousel';
+//mq
