@@ -195,4 +195,124 @@ div .ib-titlecard-alt h2 {
   font-size: medium;
 }
 
+/*MEDIA QUERIES*/
+@media (max-width: 768px) and (min-width: 577px) {
+  /*RESET*/
+  * {
+    overflow-y: visible;
+  }
+  /*product card*/
+  .ib-card {
+    width: 80%;
+    height: fit-content;
+    margin-bottom: 10px;
+    overflow: visible;
+  }
+  .ib-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  /*horizontal autor card*/
+  .ib-hcard {
+    max-width: 80%;
+    max-height: fit-content;
+  }
+  .ib-hcard h5 {
+    font-size: medium;
+  }
+  .ib-hcard p {
+    font-size: small;
+  }
+  /*horizontal aside card*/
+  .ib-hcard-alt {
+    max-height: none;
+    max-width: 80%;
+    margin-top: 0px;
+  }
+  /*horizontal location card*/
+  .ib-hcard-location {
+    max-width: 75%;
+    height: fit-content;
+  }
+  /*footer - general*/
+  .ib-socials {
+    max-height: fit-content;
+    overflow-y: visible;
+  }
+  .ib-form div {
+    width: fit-content;
+  }
+  .ib-form-alt div {
+    width: 75%;
+  }
+  /*general components*/
+  .ib-accordion {
+    width: 75%;
+  }
+  /*specialiced title card*/
+  div .ib-titlecard {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+  }
+  .ib-titlecard-alt {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  /*product card*/
+  .ib-gallery {
+    overflow-y: visible;
+  }
+  .ib-card {
+    width: 80%;
+    height: fit-content;
+    margin-bottom: 10px;
+    overflow: visible;
+  }
+  .ib-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  /*horizontal autor card*/
+  .ib-hcard {
+    max-height: none;
+    max-width: 100%;
+  }
+  .ib-hcard-alt {
+    max-height: none;
+    max-width: 94%;
+    margin-top: 50px;
+  }
+  /*horizontal location card*/
+  .ib-hcard-location {
+    max-width: 94%;
+    height: fit-content;
+  }
+  /*footer - general*/
+  .ib-socials {
+    overflow: visible;
+    max-height: fit-content;
+  }
+  .ib-form div {
+    width: fit-content;
+  }
+  .ib-form-alt div {
+    width: 94%;
+  }
+  /*general components*/
+  .ib-accordion {
+    width: 94%;
+  }
+  /*specialiced title card*/
+  div .ib-titlecard {
+    display: flex;
+    justify-content: center;
+    max-width: 94%;
+  }
+  .ib-titlecard-alt {
+    max-width: 100%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
