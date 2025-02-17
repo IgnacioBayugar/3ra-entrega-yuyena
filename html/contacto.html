@@ -15,11 +15,10 @@
 </head>
 <body class="ib-body">
   <div class="container-fluid">
-    <header class="row ib-navbar p-2">
-      <!--navbar-->
+    <header class="row ib-nav p-2">
       <div class="row">
-        <article class=" col-12 col-sm-6 col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
-          <h1 class="ib-title">Yuyena Pastelería</h1>
+        <article class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
+          <h1>Yuyena Pastelería</h1>
         </article>
         <article class="col-12 col-sm-6 col-md-6 col-lg-6">
           <nav class="navbar navbar-expand-lg p-2 justify-content-center">
@@ -28,60 +27,111 @@
             </button>              
             <div class="justify-content-end collapse navbar-collapse pe-5" id="navbarSupportedContent">
               <div class="btn-group">
-                <a href="../index.html" class="ib-navbar-btn btn">Inicio</a>
-                <a href="./sobremi.html" class="ib-navbar-btn btn">Sobre mi</a>
-                <a href="./contacto.html" class="ib-navbar-btn btn ib-active" aria-current="page">Contacto</a>
+                <a href="../index.html" class="btn">Inicio</a>
+                <a href="./sobremi.html" class="btn">Sobre mi</a>
+                <a href="./contacto.html" class="ib-active btn" aria-current="page">Contacto</a>
               </div>
             </div>
           </nav>
         </article>
       </div>
     </header>
-    <main class="row d-flex justify-content-center my-4">
+    <main class="row g-0 my-3">
       <!--Una card especial para mostrar la ubicacion del local-->
-      <article class="card ib-ubicard p-3">
-        <img src="../assets/mapa_contacto.jpg" class="card-img-top" alt="mapa de como llegar">
-        <div class="card-body">
-          <h5 class="card-title">Cómo llegar</h5>
-          <p class="card-text">Estoy en xxxxxxxx, en el centro de xxxxxxxxxx. Me encontrarás cerca de xxxxxxxxxxx. ¡Te espero con mucho gusto para que disfrutes de nuestras delicias!</p>
-          <p class="card-text text-end">Última actualización hace 48 hrs.</p>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center py-3">
+        <article class="card ib-hcard-location mb-3 pt-4">
+          <!--en mi ultima entrega se me recomendo incorporar el iframe de google en esta seccion, lo cual con mis conocimientos no pude realizar, dejo un momentario al final el codigo que intente usar-->
+          <img src="../assets/mapa_contacto.jpg" class="card-img-top" alt="mapa representativo de indicaciones para llegar">
+          <div class="card-body">
+            <h5 class="card-title mt-3">Cómo llegar</h5>
+            <p class="card-text mt-4">Estoy en xxxxxxxx, en el centro de xxxxxxxxxx. Me encontrarás cerca de xxxxxxxxxxx. ¡Te espero con mucho gusto para que disfrutes de nuestras delicias!</p>
+          </div>
+        </article>        
+      </div>
+      <div class=" col-12 col-sm-12 col-md-6 col-lg-6 py-3 ps-3">
+        <div class="ib-titlecard py-3">
+          <h2 class="ms-3"> Te dejo información útil!</h2>
         </div>
-      </article>
+        <article class="ib-accordion accordion accordion-flush" id="accordionFlushExample">
+          <!--accordion con detalles mas importantes a explicar-->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                - Horarios
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                - Delivery
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                - Encargos
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+        </article>
+        <article class="ib-form ib-form-alt mt-2">
+          <!--form para preguntas especificas del footer ahora como contenido principal, colocado de manera mas estrategica en la pagina-->
+          <div class="d-flex justify-content-start align-items-center p-1">
+            <h2 class="px-2 pt-1">Tienes otra pregunta?</h2>
+            <form class="d-flex ps-2" role="search">
+              <input class="form-control me-2" type="search" placeholder="Espero tu consulta!" aria-label="Search">
+              <button class="btn overflow-visible" type="submit">Enviar</button>
+            </form>         
+          </div>
+        </article>
+      </div>
     </main>
-    <footer class="row ib-socialnet-card p-2">
-            <!--apartado redes sociales-->
-            <article class="col-12 col-sm-12 col-md-2 col-lg-3 d-flex justify-content-center pt-1 fs-6">
-              <p class="ib-socialnet-text">Seguime en mis redes:</p>
-            </article>
-            <article class="col-12 col-sm-12 col-md-2 col-lg-2 d-flex align-items-center">
-              <img src="../assets/whatsapp_icon.png" class="ib-socialnet-img img-fluid rounded-start" alt="icono de whatsapp">
-              <div class="card-body p-1">
-                <h5 class="card-text ib-socialnet-text m-0">Whatsapp:</h5>
-                <p class="card-text ib-socialnet-text">000-0000-0000</p>
-              </div>
-            </article>
-            <article class="col-12 col-sm-12 col-md-2 col-lg-2 d-flex align-items-center">
-              <img src="../assets/Instagram_icon.png.webp" class="ib-socialnet-img img-fluid rounded-start" alt="icono de instagram">
-              <div class="card-body p-1">
-                <h5 class="card-text ib-socialnet-text m-0">Instagram:</h5>
-                <p class="card-text ib-socialnet-text ps-1">@usuario_1</p>
-              </div>
-            </article>
-            <article class="col-12 col-sm-12 col-md-2 col-lg-2 d-flex align-items-center">
-              <img src="../assets/facebook_icon.png" class="ib-socialnet-img" alt="icono de facebook">
-              <div class="card-body p-1">
-                <h5 class="card-text ib-socialnet-text m-0">Facebook:</h5>
-                <p class="card-text ib-socialnet-text ps-1">@usuario_2</p>
-              </div>
-            </article>
-            <!--formulario para comentarios-->
-            <article class="col-12 col-sm-12 col-md-4 col-lg-3 d-flex justalign-items-center p-1">
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Espero tu comentario!" aria-label="Search">
-                <button class="ib-btn-footer btn overflow-visible" type="submit">Enviar</button>
-              </form>          
-            </article>
-    </footer>
+    <footer class="row ib-socials p-2">
+      <!--apartado redes sociales, sin el form-->
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+      <article class="ib-card-socials d-flex justify-content-center pt-1">
+        <p>Seguime en mis redes:</p>
+      </article>
+      </div>
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <article class="ib-card-socials d-flex align-items-center">
+          <img src="../assets/whatsapp_icon.png" class="mb-3" alt="icono de whatsapp">
+          <div class="p-1">
+            <h5 class="m-0">Whatsapp:</h5>
+            <p>000-0000-0000</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <article class="ib-card-socials d-flex align-items-center">
+          <img src="../assets/Instagram_icon.png.webp" class="mb-3" alt="icono de instagram">
+          <div class="p-1">
+            <h5 class="m-0">Instagram:</h5>
+            <p class="ps-1">@usuario_1</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <article class="ib-card-socials d-flex align-items-center">
+          <img src="../assets/facebook_icon.png" class="mb-3" alt="icono de facebook">
+          <div class="p-1">
+            <h5 class="m-0">Facebook:</h5>
+            <p class="ps-1">@usuario_2</p>
+          </div>
+        </article>
+      </div>
+    </footer> 
   </div>
     <!--SCRIPT BS-->
     <script src="https://cdn.jsdelivr.net/npm/bootst ab@2.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

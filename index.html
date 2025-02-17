@@ -16,11 +16,10 @@
 <body class="ib-body">
   <div class="container-fluid">
     <!--navbar-->
-      <!--yo se que la semantica correcta seria <section> encerrando <article> pero en este caso no me parecia correcto, asi que le puse div a la row y el resto articles. En cuanto a <main>, tampoco puedo agregar un section sin romper la gird, es algo que todavia no se como hacerlo! disculpas-->
-    <header class="row ib-navbar p-2">
+    <header class="row ib-nav p-2">
       <div class="row">
-        <article class=" col-12 col-sm-6 col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
-          <h1 class="ib-title">Yuyena Pastelería</h1>
+        <article class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
+          <h1>Yuyena Pastelería</h1>
         </article>
         <article class="col-12 col-sm-6 col-md-6 col-lg-6">
           <nav class="navbar navbar-expand-lg p-2 justify-content-center">
@@ -29,92 +28,148 @@
             </button>              
             <div class="justify-content-end collapse navbar-collapse pe-5" id="navbarSupportedContent">
               <div class="btn-group">
-                <a href="./index.html" class="ib-navbar-btn btn ib-active" aria-current="page">Inicio</a>
-                <a href="./html/sobremi.html" class="ib-navbar-btn btn">Sobre mi</a>
-                <a href="./html/contacto.html" class="ib-navbar-btn btn">Contacto</a>
+                <a href="./index.html" class="ib-active btn" aria-current="page">Inicio</a>
+                <a href="./html/sobremi.html" class="btn">Sobre mi</a>
+                <a href="./html/contacto.html" class="btn">Contacto</a>
               </div>
             </div>
           </nav>
         </article>
       </div>
     </header>
-    <main class="row ib-gallery my-5">
+    <main class="row g-0">
       <!--galleria-->
       <!--div para la grid, article para contenido individual-->
-      <div class="col-12 col-sm-6 col-md-3 col-lg-3 gx-1 my-1 d-flex justify-content-center">
-        <article class="ib-card">
-          <img src="./assets/muffins_portfolio.jpg" class="ib-card-img card-img-top pt-3 px-2" alt="imagen de una mesa de catering de postres">
-          <div class="card-body py-1 px-3">
-            <h5 class="card-title mb-1">Mesas dulces</h5>
-            <p class="ib-card-text card-text">Mesas decoradas con una variedad de dulces y postres para sorprender a tus invitados en cualquier evento.</p>
-            <a href="#" class="ib-btn btn px-2 py-1">Ver más</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 col-lg-3 gx-1 my-1 d-flex justify-content-center">
-        <article class="ib-card">
-          <img src="./assets/torta1_portfolio.jpg" class="ib-card-img card-img-top pt-3 px-2" alt="imagen de una torta con diseño profesional">
-          <div class="card-body py-1 px-3">
-            <h5 class="card-title mb-1">Tortas personalizadas</h5>
-            <p class="ib-card-text card-text">Tortas personalizadas con diseños exclusivos, perfectas para hacer de tu evento un momento inolvidable.</p>
-            <a href="#" class="ib-btn btn px-2 py-1">Ver más</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 col-lg-3 gx-1 my-1 d-flex justify-content-center">
-        <article class="ib-card">
-          <img src="./assets/masasdulces_portfolio.jpg" class="ib-card-img card-img-top pt-3 px-2" alt="imagen de postres varios">
-          <div class="card-body py-1 px-3">
-            <h5 class="card-title mb-1">Postres</h5>
-            <p class="ib-card-text card-text">Boxs de postres surtidos, ideales para sorprender a tus invitados con una variedad de dulces en un solo paquete.</p>
-            <a href="#" class="ib-btn btn px-2 py-1">Ver más</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 col-lg-3 gx-1 my-1 d-flex justify-content-center">
-        <article class="ib-card">
-          <img src="./assets/cursos_porfolio.jpg" class="ib-card-img card-img-top pt-3 px-2" alt="foto de estudiante de pasteleria">
-          <div class="card-body py-1 px-3">
-            <h5 class="card-title mb-1">Cursos<span class="ib-badge badge text-bg-danger mx-2 px-1 py-0">Nuevo!</span></h5>
-            <p class="ib-card-text card-text">Cursos de pastelería donde aprenderás técnicas y recetas para crear deliciosos postres y tortas como un profesional</p>
-            <a href="#" class="ib-btn btn px-2 py-1">Ver más</a>
-          </div>
-        </article>
-      </div>
-    </main>
-    <footer class="row ib-socialnet-card p-2">
+      <section class="row g-0 ib-gallery my-3 pt-3 pb-2">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center py-3">
+          <article class="card ib-card mb-3">
+            <div class="row g-0">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <img src="./assets/muffins_portfolio.jpg" class="img-fluid rounded-start" alt="mesa de catering de postres">
+              </div>
+              <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title">Mesas dulces</h5>
+                  <p class="card-text">Mesas decoradas con una variedad de dulces y postres, ideales para sorprender a tus invitados en cualquier evento.</p>
+                  <div class="d-flex justify-content-end">
+                    <p class="card-text"><small class="text-body-secondary">Agenda disponible</small></p>
+                  </div>
+                  <div class="d-flex justify-content-end mt-4">
+                    <a href="#" class="ib-btn btn">Encargar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center py-3">
+          <article class="card ib-card mb-3">
+            <div class="row g-0">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <img src="./assets/torta1_portfolio.jpg" class="img-fluid rounded-start" alt="torta personalizada">
+              </div>
+              <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title">Tortas Personalizadas</h5>
+                  <p class="card-text">Tortas personalizadas con diseños exclusivos y profesionales, perfectas para hacer de tu evento un momento inolvidable.</p>
+                  <div class="d-flex justify-content-end">
+                    <p class="card-text"><small class="text-body-secondary">Agenda disponible</small></p>
+                  </div>
+                  <div class="d-flex justify-content-end mt-4">
+                    <a href="#" class="ib-btn btn">Encargar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center py-3">
+          <article class="card ib-card mb-3">
+            <div class="row g-0">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <img src="./assets/masasdulces_portfolio.jpg" class="img-fluid rounded-start" alt="box de postres">
+              </div>
+              <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title">Box de postres</h5>
+                  <p class="card-text">Boxs de postres surtidos, ideales para sorprender a tus invitados con una variedad de dulces en un solo paquete.</p>
+                  <div class="d-flex justify-content-end">
+                    <p class="card-text"><small class="text-body-secondary">Agenda llena!</small></p>
+                  </div>
+                  <div class="d-flex justify-content-end mt-4">
+                    <a href="#" class="ib-btn btn disabled">Encargar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center py-3">
+          <article class="card ib-card mb-3">
+            <div class="row g-0">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <img src="./assets/cursos_porfolio.jpg" class="img-fluid rounded-start" alt="estudiante de pasteleria">
+              </div>
+              <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title">Cursos<span class="ib-badge badge text-bg-danger mx-2 px-1 py-0">Nuevo!</span></h5>
+                  <p class="card-text">Cursos de pastelería donde aprenderás técnicas y recetas para crear deliciosos postres y tortas como un profesional.</p>
+                  <div class="d-flex justify-content-end">
+                    <p class="card-text"><small class="text-body-secondary">Cupos disponibles: 3</small></p>
+                  </div>
+                  <div class="d-flex justify-content-end mt-4">
+                    <a href="#" class="ib-btn btn">Encargar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>    
+    <footer class="row ib-socials mt-2 p-2">
       <!--apartado redes sociales-->
-      <article class="col-12 col-sm-12 col-md-2 col-lg-3 d-flex justify-content-center pt-1 fs-6">
-        <p class="ib-socialnet-text">Seguime en mis redes:</p>
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+      <article class="ib-card-socials d-flex justify-content-center pt-1">
+        <p>Seguime en mis redes:</p>
       </article>
-      <article class="col-12 col-sm-12 col-md-2 col-lg-2 d-flex align-items-center">
-        <img src="./assets/whatsapp_icon.png" class="ib-socialnet-img img-fluid rounded-start" alt="icono de whatsapp">
-        <div class="card-body p-1">
-          <h5 class="card-text ib-socialnet-text m-0">Whatsapp:</h5>
-          <p class="card-text ib-socialnet-text">000-0000-0000</p>
-        </div>
-      </article>
-      <article class="col-12 col-sm-12 col-md-2 col-lg-2 d-flex align-items-center">
-        <img src="./assets/Instagram_icon.png.webp" class="ib-socialnet-img img-fluid rounded-start" alt="icono de instagram">
-        <div class="card-body p-1">
-          <h5 class="card-text ib-socialnet-text m-0">Instagram:</h5>
-          <p class="card-text ib-socialnet-text ps-1">@usuario_1</p>
-        </div>
-      </article>
-      <article class="col-12 col-sm-12 col-md-2 col-lg-2 d-flex align-items-center">
-        <img src="./assets/facebook_icon.png" class="ib-socialnet-img" alt="icono de facebook">
-        <div class="card-body p-1">
-          <h5 class="card-text ib-socialnet-text m-0">Facebook:</h5>
-          <p class="card-text ib-socialnet-text ps-1">@usuario_2</p>
-        </div>
-      </article>
+      </div>
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+        <article class="ib-card-socials d-flex align-items-center">
+          <img src="./assets/whatsapp_icon.png" class="mb-3" alt="icono de whatsapp">
+          <div class="p-1">
+            <h5 class="m-0">Whatsapp:</h5>
+            <p>000-0000-0000</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+        <article class="ib-card-socials d-flex align-items-center">
+          <img src="./assets/Instagram_icon.png.webp" class="mb-3" alt="icono de instagram">
+          <div class="p-1">
+            <h5 class="m-0">Instagram:</h5>
+            <p class="ps-1">@usuario_1</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+        <article class="ib-card-socials d-flex align-items-center">
+          <img src="./assets/facebook_icon.png" class="mb-3" alt="icono de facebook">
+          <div class="p-1">
+            <h5 class="m-0">Facebook:</h5>
+            <p class="ps-1">@usuario_2</p>
+          </div>
+        </article>
+      </div>
       <!--formulario para comentarios-->
-      <article class="col-12 col-sm-12 col-md-4 col-lg-3 d-flex justalign-items-center p-1">
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Espero tu comentario!" aria-label="Search">
-          <button class="ib-btn-footer btn overflow-visible" type="submit">Enviar</button>
-        </form>          
-      </article>
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="ib-form d-flex justify-content-center p-1">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Espero tu consulta!" aria-label="Search">
+            <button class="btn overflow-visible" type="submit">Enviar</button>
+          </form>         
+        </article>
+      </div>
     </footer>
   </div>
   <!--SCRIPTS BS-->

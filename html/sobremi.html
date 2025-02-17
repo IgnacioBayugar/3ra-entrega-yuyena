@@ -15,11 +15,10 @@
 </head>
 <body class="ib-body">
   <div class="container-fluid">
-    <header class="row d-flex ib-navbar p-2">
-      <!--navbar-->
+    <header class="row ib-nav p-2">
       <div class="row">
-        <article class=" col-12 col-sm-6 col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
-          <h1 class="ib-title">Yuyena Pastelería</h1>
+        <article class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
+          <h1>Yuyena Pastelería</h1>
         </article>
         <article class="col-12 col-sm-6 col-md-6 col-lg-6">
           <nav class="navbar navbar-expand-lg p-2 justify-content-center">
@@ -28,22 +27,22 @@
             </button>              
             <div class="justify-content-end collapse navbar-collapse pe-5" id="navbarSupportedContent">
               <div class="btn-group">
-                <a href="../index.html" class="ib-navbar-btn btn">Inicio</a>
-                <a href="./sobremi.html" class="ib-navbar-btn btn ib-active" aria-current="page">Sobre mi</a>
-                <a href="./contacto.html" class="ib-navbar-btn btn">Contacto</a>
+                <a href="../index.html" class="btn">Inicio</a>
+                <a href="./sobremi.html" class="ib-active btn" aria-current="page">Sobre mi</a>
+                <a href="./contacto.html" class="btn">Contacto</a>
               </div>
             </div>
           </nav>
         </article>
       </div>
     </header>
-    <main class="row mt-5 mb-4">
-      <div class="col-md-7 d-flex align-items-center justify-content-center">
+    <main class="row mt-5">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center align-items-center ">
         <!--card especial para introducir a la autora-->
-        <article class="card ib-hcard my-3">
+        <article class="card ib-hcard">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="../assets/fotoautora_sobremi.jpg" class="img-fluid rounded-start" alt="foto de la autora">
+              <img src="../assets/fotoautora_sobremi.jpg" class="img-fluid" alt="foto de la autora">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -54,9 +53,12 @@
           </div>
         </article>
       </div>
-      <div class="col-md-5 my-3 d-flex align-items-center justify-content-start">
-        <!--carousel de imagenes con productos elaborados por la outora-->
-        <article id="carouselExampleIndicators" class="carousel slide ib-carousel">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center">
+        <!--carousel con imagenes de los trabajos de la autora-->
+        <article id="carouselExampleIndicators" class="carousel ib-carousel slide p-0 m-0">
+          <div class="ib-titlecard-alt pt-2 d-flex justify-content-center">
+            <h2>Te muestro algunos de mis trabajos!</h2>
+          </div>
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -83,40 +85,90 @@
           </button>
         </article>
       </div>
+      <div class="row g-0 mt-0 py-0 mb-5">
+        <div class="col-12 col-sm-6 col-md-6 col-md-6 d-flex justify-content-center align-items-start">
+          <article class="accordion ib-accordion accordion-flush" id="accordionFlushExample">
+            <!--acordion con la formacion y trayectoria profesional-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  - Experiencia Laboral
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  - Formacion Academica
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+          </article>    
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center">
+         <!--aside para una inscripcion de cupos limitados, una vez completos los cupos, se retira-->
+          <aside class="card ib-hcard-alt">
+            <div class="card-header">
+              Nuevo curso disponible! - Cupos limitados
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Curso Pastelería</h5>
+              <p class="card-text">Cursos de pastelería donde aprenderás técnicas y recetas para crear deliciosos postres y tortas como un profesional.</p>
+              <a href="#" class="ib-btn btn btn-primary">Ver mas</a>
+            </div>
+          </aside>
+        </div>
+      </div>
     </main>
-    <footer class="row ib-socialnet-card p-2">
-            <!--apartado redes sociales-->
-            <article class="col-12 col-sm-12 col-md-2 col-lg-3 d-flex justify-content-center pt-1 fs-6">
-              <p class="ib-socialnet-text">Seguime en mis redes:</p>
-            </article>
-            <article class="col-12 col-sm-12 col-md-2 col-lg-2 d-flex align-items-center">
-              <img src="../assets/whatsapp_icon.png" class="ib-socialnet-img img-fluid rounded-start" alt="icono de whatsapp">
-              <div class="card-body p-1">
-                <h5 class="card-text ib-socialnet-text m-0">Whatsapp:</h5>
-                <p class="card-text ib-socialnet-text">000-0000-0000</p>
-              </div>
-            </article>
-            <article class="col-12 col-sm-12 col-md-2 col-lg-2 d-flex align-items-center">
-              <img src="../assets/Instagram_icon.png.webp" class="ib-socialnet-img img-fluid rounded-start" alt="icono de instagram">
-              <div class="card-body p-1">
-                <h5 class="card-text ib-socialnet-text m-0">Instagram:</h5>
-                <p class="card-text ib-socialnet-text ps-1">@usuario_1</p>
-              </div>
-            </article>
-            <article class="col-12 col-sm-12 col-md-2 col-lg-2 d-flex align-items-center">
-              <img src="../assets/facebook_icon.png" class="ib-socialnet-img" alt="icono de facebook">
-              <div class="card-body p-1">
-                <h5 class="card-text ib-socialnet-text m-0">Facebook:</h5>
-                <p class="card-text ib-socialnet-text ps-1">@usuario_2</p>
-              </div>
-            </article>
-            <!--formulario para comentarios-->
-            <article class="col-12 col-sm-12 col-md-4 col-lg-3 d-flex justalign-items-center p-1">
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Espero tu comentario!" aria-label="Search">
-                <button class="ib-btn-footer btn overflow-visible" type="submit">Enviar</button>
-              </form>          
-            </article>
+    <footer class="row ib-socials p-2">
+      <!--apartado redes sociales-->
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+      <article class="ib-card-socials d-flex justify-content-center pt-1">
+        <p>Seguime en mis redes:</p>
+      </article>
+      </div>
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+        <article class="ib-card-socials d-flex align-items-center">
+          <img src="../assets/whatsapp_icon.png" class="mb-3" alt="icono de whatsapp">
+          <div class="p-1">
+            <h5 class="m-0">Whatsapp:</h5>
+            <p>000-0000-0000</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+        <article class="ib-card-socials d-flex align-items-center">
+          <img src="../assets/Instagram_icon.png.webp" class="mb-3" alt="icono de instagram">
+          <div class="p-1">
+            <h5 class="m-0">Instagram:</h5>
+            <p class="ps-1">@usuario_1</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+        <article class="ib-card-socials d-flex align-items-center">
+          <img src="../assets/facebook_icon.png" class="mb-3" alt="icono de facebook">
+          <div class="p-1">
+            <h5 class="m-0">Facebook:</h5>
+            <p class="ps-1">@usuario_2</p>
+          </div>
+        </article>
+      </div>
+      <!--formulario para comentarios-->
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="ib-form d-flex justify-content-center p-1">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Espero tu consulta!" aria-label="Search">
+            <button class="btn overflow-visible" type="submit">Enviar</button>
+          </form>         
+        </article>
+      </div>
     </footer>
   </div>
   <!--SCRIPT BS-->
