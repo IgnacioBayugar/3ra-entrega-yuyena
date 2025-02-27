@@ -4,7 +4,7 @@
         color: white;
     }
     &__text{
-        font-size: map-get($txt-common, fs);
+        font-size: map-get($txt, md);
         color: white;
     }
     &__image{

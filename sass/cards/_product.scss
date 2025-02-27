@@ -7,7 +7,7 @@
         object-fit: cover;
     }
     &__text{
-        font-size: map-get($txt-common, fs);
+        font-size: map-get($txt, md);
     }
     &__button{
         border-radius: 0.6rem;

@@ -1,18 +1,367 @@
-/* Error: Undefined variable.
- *    ,
- * 10 |         font-size: map-get($txt-common, fs);
- *    |                            ^^^^^^^^^^^
- *    '
- *   sass\cards\_product.scss 10:28  @import
- *   sass\styles.scss 13:9           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 10 \2502          font-size: map-get($txt-common, fs);\d\a    \2502                             ^^^^^^^^^^^\a    \2575 \a   sass\\cards\\_product.scss 10:28  @import\a   sass\\styles.scss 13:9           root stylesheet";
+* {
+  font-family: "Lora", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.idb-nav {
+  background-color: #65524D;
+}
+.idb-nav__brand {
+  font-size: xx-large;
+  color: #F49867;
+  overflow: hidden;
+}
+.idb-nav__button {
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  color: #65524D;
+  background-color: #F49867;
+}
+.idb-nav__button:hover {
+  color: #65524D;
+  background-color: #fcad83;
+  outline-style: none;
+}
+.idb-nav__button.idb-active {
+  background-color: #e49062;
+}
+.idb-nav__button--start {
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+}
+.idb-nav__button--end {
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+}
+
+.ib-body {
+  background-image: url(../assets/fondo_general\ \(3\).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.idb-gallery {
+  flex-wrap: wrap;
+  background-color: none;
+  overflow: hidden;
+}
+
+.idb-end {
+  background-color: #65524D;
+  height: 65px;
+  overflow: hidden;
+}
+.idb-end__text {
+  color: white;
+}
+
+.idb-card {
+  width: 37rem;
+  height: 16rem;
+  background-color: #65524D;
+  color: white;
+  overflow: hidden;
+  border-radius: 1.2rem;
+}
+.idb-card__image {
+  min-height: 16rem;
+  object-fit: cover;
+}
+.idb-card__text {
+  font-size: 1rem;
+}
+.idb-card__button {
+  border-radius: 0.6rem;
+  color: #65524D;
+  background-color: #F49867;
+}
+.idb-card__button:hover {
+  background-color: #fcad83;
+  color: #65524D;
+}
+.idb-card--alt {
+  width: fit-content;
+  height: fit-content;
+  background-color: #65524D;
+  color: white;
+  border-style: groove;
+  border-color: #65524D;
+  border-width: 0.1rem;
+  border-radius: 1.2rem;
+}
+.idb-card--alt .idb-card__image {
+  height: 12rem;
+}
+
+.idb-hcard {
+  width: 33rem;
+  height: 236px;
+  background-color: #65524D;
+  color: white;
+  margin-bottom: -2px;
+  border-radius: 1.2rem 1.2rem 0rem 0rem;
+}
+.idb-hcard__image {
+  border-radius: 1.2rem 0rem 0rem 0rem;
+}
+
+.idb-soc-card__title {
+  font-size: medium;
+  color: white;
+}
+.idb-soc-card__text {
+  font-size: 1rem;
+  color: white;
+}
+.idb-soc-card__image {
+  height: 1.75rem;
+  width: 1.75rem;
+}
+.idb-soc-card__link {
+  font-size: 0.9rem;
+}
+
+.idb-title {
+  font-size: xx-large;
+  color: black;
+}
+
+.idb-gtext {
+  font-size: medium;
+  color: black;
+}
+
+div .idb-titles {
+  width: 33rem;
+  background-color: #65524D;
+}
+div .idb-titles__headline {
+  color: white;
+  font-size: large;
+}
+div .idb-titles--alt {
+  border-radius: 1.2rem 1.2rem 0rem 0rem;
+}
+
+.idb-expiring {
+  width: 33rem;
+  height: fit-content;
+  background-color: #65524D;
+  color: white;
+  border-radius: 0rem 0rem 1.2rem 1.2rem;
+}
+.idb-expiring__button {
+  color: #65524D;
+  background-color: #F49867;
+  border-radius: 4px;
+  border-style: none;
+}
+.idb-expiring__button:hover {
+  color: #65524D;
+  background-color: #fcad83;
+  outline-style: none;
+}
+
+.idb-contact--alt {
+  background-color: #65524D;
+  width: 33rem;
+  border-radius: 0rem 0rem 1.2rem 1.2rem;
+  border-top-style: groove;
+  border-top-color: white;
+  border-top-width: 0.0625rem;
+}
+.idb-contact__title {
+  font-size: medium;
+  color: white;
+}
+.idb-contact__submit {
+  background-color: #F49867;
+  color: #65524D;
+  border-radius: 0.6rem;
+}
+.idb-contact__submit:hover {
+  background-color: #fcad83;
+  color: #65524D;
+}
+
+.idb-accordion {
+  width: 33rem;
+  border-top-style: groove;
+  border-top-color: white;
+  border-top-width: 1px;
+}
+.idb-accordion .accordion-button {
+  box-shadow: none;
+}
+.idb-accordion__body {
+  background-color: #65524D;
+  color: white;
+}
+.idb-accordion__title {
+  background-color: #65524D;
+  color: white;
+}
+.idb-accordion__action {
+  background-color: #65524D;
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #65524D;
+  color: white;
+}
+
+.idb-carousel {
+  max-width: 33rem;
+  max-height: 238px;
+  border-radius: 1.2rem 1.2rem 0rem 0rem;
+  overflow: hidden;
+}
+.idb-carousel div.ib-titlecard {
+  background-color: #65524D;
+}
+.idb-carousel__image {
+  object-fit: cover;
+}
+.idb-carousel__title {
+  color: white;
+  font-size: medium;
+}
+
+.idb-map {
+  width: 33rem;
+  height: 28rem;
+  border-style: groove;
+  border-color: #65524D;
+  border-width: 0.25rem;
+  border-radius: 1.2rem;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 768px) and (min-width: 577px) {
+  /*RESET*/
+  * {
+    overflow-y: visible;
+  }
+  /*product card*/
+  .idb-card {
+    width: 20rem;
+    height: fit-content;
+    margin-bottom: 1rem;
+    overflow: visible;
+  }
+  .idb-card__img {
+    width: 100%;
+    height: 16rem;
+    border-radius: 0, 3rem;
+  }
+  /*horizontal autor card*/
+  .ib-hcard {
+    max-width: 20rem;
+    max-height: fit-content;
+  }
+  /*horizontal aside card*/
+  .idb-expiring {
+    width: 20rem;
+    height: fit-content;
+    background-color: #65524D;
+    color: white;
+  }
+  /*horizontal location card*/
+  .idb-map {
+    width: 20rem;
+  }
+  /*footer - general*/
+  .idb-end {
+    max-height: fit-content;
+    overflow-y: visible;
+  }
+  .idb-contact div {
+    width: fit-content;
+  }
+  .ib-form-alt div {
+    width: 75%;
+  }
+  /*general components*/
+  .idb-accordion {
+    width: 22rem;
+  }
+  /*specialiced title card*/
+  div .ib-titlecard {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+  }
+  .ib-titlecard-alt {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  /*product card*/
+  .idb-nav__brand {
+    font-size: larger;
+  }
+  .idb-nav__button {
+    width: 7rem;
+  }
+  .idb-card {
+    width: 20rem;
+    height: fit-content;
+    margin-bottom: 1rem;
+    overflow: visible;
+  }
+  .idb-card__img {
+    width: 100%;
+    height: 16rem;
+    border-radius: 0, 3rem;
+  }
+  /*horizontal autor card*/
+  .ib-hcard {
+    max-width: 20rem;
+    max-height: fit-content;
+  }
+  /*horizontal aside card*/
+  .idb-expiring {
+    width: 20rem;
+    height: fit-content;
+    background-color: #65524D;
+    color: white;
+  }
+  /*horizontal location card*/
+  .idb-map {
+    width: 20rem;
+  }
+  /*footer - general*/
+  .idb-end {
+    height: fit-content;
+    overflow: visible;
+  }
+  div .idb-contact {
+    width: 22rem;
+  }
+  div .idb-contact--alt {
+    background-color: #65524D;
+    width: 22rem;
+  }
+  .idb-form-alt div {
+    width: 94%;
+  }
+  /*general components*/
+  .idb-accordion {
+    width: 22rem;
+  }
+  /*specialiced title card*/
+  div .idb-titles {
+    display: flex;
+    justify-content: center;
+    width: 22rem;
+  }
+  div .idb-titles--alt {
+    width: 22rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
