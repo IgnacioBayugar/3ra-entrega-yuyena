@@ -5,52 +5,44 @@
          overflow-y: visible;
      }
      /*product card*/
-     .ib-card{
-         width: 80%;
+     .idb-card{
+         width: 20rem;
          height: fit-content;
-         margin-bottom: 10px;
+         margin-bottom: 1rem;
          overflow: visible;
-         img{
+         &__img{
             width: 100%;
-            border-radius: 5px;
+            height: 16rem;
+            border-radius: 0,3rem;
         }
      }
      /*horizontal autor card*/
      .ib-hcard{
-         max-width: 80%;
+         max-width: 20rem;
          max-height: fit-content;
-         h5{
-            font-size: medium;
-        }
-        p{
-            font-size: small;
-        }
      }
      /*horizontal aside card*/
-     .ib-hcard-alt{
-         max-height: none;
-         max-width: 80%;
-         margin-top: 0px;
+     .idb-expiring{
+        @include card (20rem, fit-content);
      }
      /*horizontal location card*/
-     .ib-hcard-location{
-         max-width: 75%;
-         height: fit-content;
+     .idb-map{
+        width: 20rem; 
      }
      /*footer - general*/
-     .ib-socials{
+     .idb-end{
          max-height: fit-content;
          overflow-y: visible;
      }
-     .ib-form div{
+     .idb-contact div{
          width: fit-content;
      }
      .ib-form-alt div{
          width: 75%;
      }
      /*general components*/
-     .ib-accordion{
-         width: 75%;
+     .idb-accordion{
+         width: 22rem;
      }
      /*specialiced title card*/
      div .ib-titlecard{
@@ -61,59 +53,67 @@
      .ib-titlecard-alt{
          max-width: 100%;
      }
- }
+    }
  @media (max-width: 576px) {
      /*product card*/
-     .ib-gallery{
-         overflow-y: visible;
-     }
-     .ib-card{
-         width: 80%;
-         height: fit-content;
-         margin-bottom: 10px;
-         overflow: visible;
-         img{
-            width: 100%;
-            border-radius: 5px;
+     .idb-nav{
+        &__brand{
+            font-size: larger;
+        }
+        &__button{
+            width: 7rem;
         }
      }
-     /*horizontal autor card*/
-     .ib-hcard{
-         max-height: none;
-         max-width: 100%;
+     .idb-card{
+        width: 20rem;
+        height: fit-content;
+        margin-bottom: 1rem;
+        overflow: visible;
+        &__img{
+           width: 100%;
+           height: 16rem;
+           border-radius: 0,3rem;
+       }
+    }
+    /*horizontal autor card*/
+    .ib-hcard{
+        max-width: 20rem;
+        max-height: fit-content;
+    }
+    /*horizontal aside card*/
+    .idb-expiring{
+       @include card (20rem, fit-content);
+    }
+    /*horizontal location card*/
+    .idb-map{
+       width: 20rem; 
+    }
+    /*footer - general*/
+    .idb-end{
+        height: fit-content;
+        overflow: visible;
+    }
+    div .idb-contact{
+         width: 22rem;
+         &--alt{
+            background-color: $brown;
+            width: 22rem;
+        }
      }
-     .ib-hcard-alt{
-         max-height: none;
-         max-width: 94%;
-         margin-top: 50px;
-     }
-     /*horizontal location card*/
-     .ib-hcard-location{
-         max-width: 94%;
-         height: fit-content;
-     }
-     /*footer - general*/
-     .ib-socials{
-         overflow: visible;
-         max-height: fit-content;
-     }
-     .ib-form div{
-         width: fit-content;
-     }
-     .ib-form-alt div{
+     .idb-form-alt div{
          width: 94%;
      }
      /*general components*/
-     .ib-accordion{
-         width: 94%;
+     .idb-accordion{
+         width: 22rem;
      }
      /*specialiced title card*/
-     div .ib-titlecard{
+     div .idb-titles{
          display: flex;
          justify-content: center;
-         max-width: 94%;
-     }
-     .ib-titlecard-alt{
-         max-width: 100%;
+         width: 22rem;
+         &--alt{
+            width: 22rem;
+         }
      }
  }

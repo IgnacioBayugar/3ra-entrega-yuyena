@@ -17,48 +17,42 @@
 </head>
 <body class="ib-body">
   <div class="container-fluid">
-    <header class="row ib-nav p-2">
-      <div class="row">
-        <article class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
-          <h1 class="animate__animated animate__fadeInDown">Yuyena Pastelería</h1>
-        </article>
-        <article class="col-12 col-sm-6 col-md-6 col-lg-6">
-          <nav class="navbar navbar-expand-lg p-2 justify-content-center">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>              
-            <div class="justify-content-end collapse navbar-collapse pe-5" id="navbarSupportedContent">
-              <div class="btn-group">
-                <a href="../index.html" class="btn">Inicio</a>
-                <a href="./sobremi.html" class="btn">Sobre mi</a>
-                <a href="./contacto.html" class="ib-active btn" aria-current="page">Contacto</a>
-              </div>
-            </div>
-          </nav>
-        </article>
-      </div>
+    <header class="row">
+      <nav class="idb-nav navbar navbar-expand-lg p-0 m-0">
+        <div class="container-fluid p-0">
+          <a class="idb-nav__brand navbar-brand ms-5 animate__animated animate__zoomIn" href="./index.html">Yuyena</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="idb-nav__button idb-nav__button--start nav-link " aria-current="page" href="../index.html">Inicio</a>
+              <li class="nav-item">
+                <a class="idb-nav__button nav-link" href="./sobremi.html">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="idb-nav__button idb-nav__button--end idb-active nav-link" aria-current="page" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main class="row g-0 my-3">
       <!--Una card especial para mostrar la ubicacion del local-->
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center py-3">
-        <article class="card ib-hcard-location animate__animated animate__fadeIn mb-3 pt-4">
-          <!--en mi ultima entrega se me recomendo incorporar el iframe de google en esta seccion, lo cual con mis conocimientos no pude realizar, dejo un momentario al final el codigo que intente usar-->
-          <img src="../assets/mapa_contacto.jpg" class="card-img-top" alt="mapa representativo de indicaciones para llegar">
-          <div class="card-body">
-            <h5 class="card-title mt-3">Cómo llegar</h5>
-            <p class="card-text mt-4">Estoy en xxxxxxxx, en el centro de xxxxxxxxxx. Me encontrarás cerca de xxxxxxxxxxx. ¡Te espero con mucho gusto para que disfrutes de nuestras delicias!</p>
-          </div>
-        </article>        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2356.0221426399576!2d-64.25936065085433!3d-27.777599875733415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b523dac7bd8eb%3A0xcff8e5d9a2296d6d!2sPortal%20Santiago!5e0!3m2!1ses-419!2sar!4v1740681192731!5m2!1ses-419!2sar" class="idb-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
       </div>
       <div class=" col-12 col-sm-12 col-md-6 col-lg-6 py-3 ps-3">
-        <div class="ib-titlecard animate__animated animate__fadeIn py-3">
-          <h2 class="ms-3"> Te dejo información útil!</h2>
+        <div class="idb-titles idb-titles--alt pt-2 d-flex justify-content-center animate__animated animate__fadeIn">
+          <h2 class="idb-carousel__title">Te dejo informacion util!</h2>
         </div>
-        <article class="ib-accordion accordion accordion-flush animate__animated animate__fadeIn" id="accordionFlushExample">
-          <!--accordion con detalles mas importantes a explicar-->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <article class="idb-accordion accordion accordion-flush animate__animated animate__fadeIn" id="accordionFlushExample">
+          <!--accordion con los detalles mas importantes a explicar-->
+          <div class="idb-accordion__body accordion-item">
+            <h2 class="idb-accordion__title accordion-header">
+              <button class="idb-accordion__action accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 - Horarios
               </button>
             </h2>
@@ -66,9 +60,9 @@
               <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <div class="idb-accordion__body accordion-item">
+            <h2 class="idb-accordion__title accordion-header">
+              <button class="idb-accordion__action accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                 - Delivery
               </button>
             </h2>
@@ -76,9 +70,9 @@
               <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <div class="idb-accordion__body accordion-item">
+            <h2 class="idb-accordion__title accordion-header">
+              <button class="idb-accordion__action accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                 - Encargos
               </button>
             </h2>
@@ -87,53 +81,53 @@
             </div>
           </div>
         </article>
-        <article class="ib-form ib-form-alt mt-2">
+        <article class="idb-contact idb-contact--alt animate__animated animate__fadeIn">
           <!--form para preguntas especificas del footer ahora como contenido principal, colocado de manera mas estrategica en la pagina-->
-          <div class="d-flex justify-content-start align-items-center animate__animated animate__fadeInUp p-1">
-            <h2 class="px-2 pt-1">Tienes otra pregunta?</h2>
+          <div class="d-flex justify-content-start align-items-center p-1">
+            <h2 class="idb-contact__title px-2 pt-1">Tienes otra pregunta?</h2>
             <form class="d-flex ps-2" role="search">
               <input class="form-control me-2" type="search" placeholder="Espero tu consulta!" aria-label="Search">
-              <button class="btn overflow-visible" type="submit">Enviar</button>
+              <button class="idb-contact__submit btn overflow-visible" type="submit">Enviar</button>
             </form>         
           </div>
         </article>
       </div>
     </main>
-    <footer class="row ib-footer p-2">
-      <!--apartado redes sociales, sin el form-->
+    <footer class="row idb-end d-flex align-items-center">
+      <!--apartado redes sociales sin el from-->
       <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-      <article class="ib-card-socials d-flex justify-content-center pt-1">
-        <p>Seguime en mis redes:</p>
+      <article class="idb-end__body d-flex justify-content-center">
+        <p class="idb-end__text">Seguime en mis redes:</p>
       </article>
       </div>
       <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-        <article class="ib-card-socials d-flex align-items-center">
-          <img src="../assets/whatsapp_icon.png" class="mb-3" alt="icono de whatsapp">
+        <article class="idb-soc-card d-flex align-items-center">
+          <img src="../assets/whatsapp_icon.png" class="idb-soc-card__image mb-3" alt="icono de whatsapp">
           <div class="p-1">
-            <h5 class="m-0">Whatsapp:</h5>
-            <p>000-0000-0000</p>
+            <h5 class="idb-soc-card__title m-0">Whatsapp:</h5>
+            <a class="idb-soc-card__link streched-link link-light">000-0000-0000</a>
           </div>
         </article>
       </div>
       <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-        <article class="ib-card-socials d-flex align-items-center">
-          <img src="../assets/Instagram_icon.png.webp" class="mb-3" alt="icono de instagram">
+        <article class="idb-soc-card d-flex align-items-center">
+          <img src="../assets/Instagram_icon.webp" class="idb-soc-card__image mb-3" alt="icono de instagram">
           <div class="p-1">
-            <h5 class="m-0">Instagram:</h5>
-            <p class="ps-1">@usuario_1</p>
+            <h5 class="idb-soc-card__title m-0">Instagram:</h5>
+            <a class="idb-soc-card__link streched-link link-light">@usuario1</a>
           </div>
         </article>
       </div>
       <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-        <article class="ib-card-socials d-flex align-items-center">
-          <img src="../assets/facebook_icon.png" class="mb-3" alt="icono de facebook">
+        <article class="idb-soc-card d-flex align-items-center">
+          <img src="../assets/facebook_icon.png" class="idb-soc-card__image mb-3" alt="icono de facebook">
           <div class="p-1">
-            <h5 class="m-0">Facebook:</h5>
-            <p class="ps-1">@usuario_2</p>
+            <h5 class="idb-soc-card__title m-0">Facebook:</h5>
+            <a class="idb-soc-card__link streched-link link-light">@usuario2</a>
           </div>
         </article>
       </div>
-    </footer> 
+    </footer>
   </div>
     <!--SCRIPT BS-->
     <script src="https://cdn.jsdelivr.net/npm/bootst ab@2.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

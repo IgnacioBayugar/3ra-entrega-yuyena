@@ -1,16 +1,19 @@
-div .ib-titlecard{
-    width: 530px;
+.idb-title{
+    font-size: xx-large;
+    color: black;
+}
+.idb-gtext{
+    font-size: medium;
+    color: black;
+}
+div .idb-titles{
+    width: 33rem;
     background-color: $brown;
-    h2{
+    &__headline{
         color: white;
         font-size: large;
     }
-}
-div .ib-titlecard-alt{
-    width: 530px;
-    background-color: $brown;
-    h2{
-        color: white;
-        font-size: large;
+    &--alt{
+        border-radius: 1.2rem 1.2rem 0rem 0rem;
     }
 }

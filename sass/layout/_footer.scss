@@ -1,5 +1,8 @@
-.ib-footer{
+.idb-end{
     background-color: $brown;
-    max-height: 65px;
+    height: 65px;
     overflow: hidden;
+    &__text{
+        color: white;
+    }
 }

@@ -2,6 +2,5 @@
     font-family: $gfont;
     margin: 0;
     padding: 0;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    box-sizing: border-box;
 }

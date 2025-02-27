@@ -18,157 +18,174 @@
 <body class="ib-body">
   <div class="container-fluid">
     <!--navbar-->
-    <header class="row ib-nav p-2">
-      <div class="row">
-        <article class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
-          <h1 class="animate__animated animate__fadeInDown">Yuyena Pastelería</h1>
-        </article>
-        <article class="col-12 col-sm-6 col-md-6 col-lg-6">
-          <nav class="navbar navbar-expand-lg p-2 justify-content-center">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>              
-            <div class="justify-content-end collapse navbar-collapse pe-5" id="navbarSupportedContent">
-              <div class="btn-group">
-                <a href="./index.html" class="ib-active btn" aria-current="page">Inicio</a>
-                <a href="./html/sobremi.html" class="btn">Sobre mi</a>
-                <a href="./html/contacto.html" class="btn">Contacto</a>
-              </div>
-            </div>
-          </nav>
-        </article>
-      </div>
+    <header class="row">
+      <nav class="idb-nav navbar navbar-expand-lg p-0 m-0">
+        <div class="container-fluid p-0">
+          <a class="idb-nav__brand navbar-brand ms-5 animate__animated animate__zoomIn" href="./index.html">Yuyena</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="idb-nav__button idb-nav__button--start idb-active nav-link" aria-current="page" href="./index.html">Inicio</a>
+              <li class="nav-item">
+                <a class="idb-nav__button nav-link" href="./html/sobremi.html">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="idb-nav__button idb-nav__button--end nav-link" href="./html/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main class="row g-0">
-      <!--galleria-->
-      <!--div para la grid, article para contenido individual-->
-      <section class="row g-0 ib-gallery my-3 pt-3 pb-2">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center py-3">
-          <article class="card ib-card animate__animated animate__zoomIn mb-3">
-            <div class="row g-0">
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <img src="./assets/muffins_portfolio.jpg" class="img-fluid rounded-start" alt="mesa de catering de postres">
-              </div>
-              <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                <div class="card-body">
-                  <h5 class="card-title">Mesas dulces</h5>
-                  <p class="card-text">Mesas decoradas con una variedad de dulces y postres, ideales para sorprender a tus invitados en cualquier evento.</p>
-                  <div class="d-flex justify-content-end">
-                    <p class="card-text"><small class="text-body-secondary">Agenda disponible</small></p>
-                  </div>
-                  <div class="d-flex justify-content-end mt-4">
-                    <a href="#" class="ib-btn btn">Encargar</a>
+      <!--galeria-->
+      <!--div para la grid, article para cords-->
+        <section class="row g-4 px-4 pb-4 m-0 idb-gallery">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xxl-12 d-flex justify-content-center p-0">
+            <article class="idb-card card animate__animated animate__fadeIn">
+              <div class="row g-0">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 ib-card__img">
+                  <img src="./assets/muffins_portfolio.jpg" class="idb-card__image img-fluid rounded-start" alt="mesa de catering de postres">
+                </div>
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                  <div class="idb-card__body card-body">
+                    <h5 class="idb-card__title card-title">Mesas dulces</h5>
+                    <p class="idb-card__text card-text">Mesas decoradas con gran variedad de dulces y postres deliciosos, ideales para sorprender a tus invitados en cualquier evento o reunión. Consulta las temáticas disponibles o crea una tu mismo!</p>
+                    <div class="d-flex justify-content-end">
+                      <a class="idb-card__button btn">Encargar</a>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <p class="card-text"><small class="text-body-secondary">Agenda disponible</small></p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </article>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center py-3">
-          <article class="card ib-card animate__animated animate__zoomIn mb-3">
-            <div class="row g-0">
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <img src="./assets/torta1_portfolio.jpg" class="img-fluid rounded-start" alt="torta personalizada">
-              </div>
-              <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                <div class="card-body">
-                  <h5 class="card-title">Tortas Personalizadas</h5>
-                  <p class="card-text">Tortas personalizadas con diseños exclusivos y profesionales, perfectas para hacer de tu evento un momento inolvidable.</p>
-                  <div class="d-flex justify-content-end">
-                    <p class="card-text"><small class="text-body-secondary">Agenda disponible</small></p>
-                  </div>
-                  <div class="d-flex justify-content-end mt-4">
-                    <a href="#" class="ib-btn btn">Encargar</a>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xxl-12 d-flex justify-content-center p-0">
+            <article class="idb-card card animate__animated animate__fadeIn">
+              <div class="row g-0">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                  <img src="./assets/torta1_portfolio.jpg" class="idb-card__image img-fluid rounded-start" alt="torta personalizada">
+                </div>
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                  <div class="idb-card__body card-body">
+                    <h5 class="idb-card__title card-title">Tortas Personalizadas</h5>
+                    <p class="idb-card__text card-text">Tortas con diseños exclusivos y profesionales, perfectas para hacer de tu evento un momento inolvidable y único. Consulta tu presupuesto, contamos con planes de pago a largo plazo sin interés!</p>
+                    <div class="d-flex justify-content-end">
+                      <a class="idb-card__button btn">Encargar</a>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <p class="card-text"><small class="text-body-secondary">Agenda disponible</small></p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </article>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center py-3">
-          <article class="card ib-card animate__animated animate__zoomIn mb-3">
-            <div class="row g-0">
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <img src="./assets/masasdulces_portfolio.jpg" class="img-fluid rounded-start" alt="box de postres">
-              </div>
-              <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                <div class="card-body">
-                  <h5 class="card-title">Box de postres</h5>
-                  <p class="card-text">Boxs de postres surtidos, ideales para sorprender a tus invitados con una variedad de dulces en un solo paquete.</p>
-                  <div class="d-flex justify-content-end">
-                    <p class="card-text"><small class="text-body-secondary">Agenda llena!</small></p>
-                  </div>
-                  <div class="d-flex justify-content-end mt-4">
-                    <a href="#" class="ib-btn btn disabled">Encargar</a>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xxl-12 d-flex justify-content-center p-0">
+            <article class="idb-card card animate__animated animate__fadeIn">
+              <div class="row g-0">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                  <img src="./assets/masasdulces_portfolio.jpg" class="idb-card__image img-fluid rounded-start" alt="box de postres">
+                </div>
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                  <div class="idb-card__body card-body">
+                    <h5 class="idb-card__title card-title">Box de postres</h5>
+                    <p class="idb-card__text card-text">Boxs de postres surtidos, ideales para sorprender a tus invitados con una variedad de dulces en un solo paquete. Consultar variantes por dias festivos! Ej: Box San Valentin, Navidad, Dia del amigo.</p>
+                    <div class="d-flex justify-content-end">
+                      <a class="idb-card__button btn disabled">Encargar</a>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <p class="card-text"><small class="text-body-secondary">Agenda llena!</small></p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </article>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center py-3">
-          <article class="card ib-card animate__animated animate__zoomIn mb-3">
-            <div class="row g-0">
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <img src="./assets/cursos_porfolio.jpg" class="img-fluid rounded-start" alt="estudiante de pasteleria">
-              </div>
-              <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                <div class="card-body">
-                  <h5 class="card-title">Cursos<span class="ib-badge badge text-bg-danger mx-2 px-1 py-0">Nuevo!</span></h5>
-                  <p class="card-text">Cursos de pastelería donde aprenderás técnicas y recetas para crear deliciosos postres y tortas como un profesional.</p>
-                  <div class="d-flex justify-content-end">
-                    <p class="card-text"><small class="text-body-secondary">Cupos disponibles: 3</small></p>
-                  </div>
-                  <div class="d-flex justify-content-end mt-4">
-                    <a href="#" class="ib-btn btn">Encargar</a>
+            </article>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xxl-12 d-flex justify-content-center p-0">
+            <article class="idb-card card animate__animated animate__fadeIn">
+              <div class="row g-0">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                  <img src="./assets/budines_portfolio.jpg" class="idb-card__image img-fluid rounded-start" alt="estudiante de pasteleria">
+                </div>
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                  <div class="idb-card__body card-body">
+                    <h5 class="idb-card__title card-title">Budines y panes</h5>
+                    <p class="idb-card__text card-text">Elaborados de forma tradicional, con ingredientes de la máxima calidad y frescura, nuestros budines y panes garantizan sabor y textura excepcionales. No dudes en consultar las variedades disponibles!</p>
+                    <div class="d-flex justify-content-end">
+                      <a class="idb-card__button btn">Encargar</a>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <p class="card-text"><small class="text-body-secondary">Agenda disponible</small></p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </article>
-        </div>
-      </section>
+            </article>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12 d-flex justify-content-center p-0">
+            <div class="idb-card idb-card--alt">
+              <img src="./assets/cursos_portfolio.jpg" class="idb-card__image card-img-top" alt="...">
+              <div class="idb-card__body card-body p-3 pb-2">
+                <h5 class="idb-card__title card-title">Cursos<span class="ib-badge badge text-bg-danger ms-1">Nuevo!</span></h5>
+                <p class="idb-card__text card-text">Cursos de pastelería donde aprenderás técnicas y recetas para crear deliciosos postres y tortas como un profesional! <br> Se dicta de manera presencial y cuenta con un certificado de finalización.</p>
+                <div class="d-flex justify-content-end">
+                  <a class="idb-card__button btn">Anotarse</a>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <p class="card-text"><small class="text-body-secondary">Cupos disponibles: 3</small></p>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </section>
+      </div>
     </main>    
-    <footer class="row ib-footer mt-2 p-2">
+    <footer class="row idb-end d-flex align-items-center">
       <!--apartado redes sociales-->
       <div class="col-12 col-sm-12 col-md-2 col-lg-2">
-      <article class="ib-card-socials d-flex justify-content-center pt-1">
-        <p>Seguime en mis redes:</p>
+      <article class="idb-end__body d-flex justify-content-center">
+        <p class="idb-end__text">Seguime en mis redes:</p>
       </article>
       </div>
       <div class="col-12 col-sm-12 col-md-2 col-lg-2">
-        <article class="ib-card-socials d-flex align-items-center">
-          <img src="./assets/whatsapp_icon.png" class="mb-3" alt="icono de whatsapp">
+        <article class="idb-soc-card d-flex align-items-center">
+          <img src="./assets/whatsapp_icon.png" class="idb-soc-card__image mb-3" alt="icono de whatsapp">
           <div class="p-1">
-            <h5 class="m-0">Whatsapp:</h5>
-            <p>000-0000-0000</p>
+            <h5 class="idb-soc-card__title m-0">Whatsapp:</h5>
+            <a class="idb-soc-card__link streched-link link-light">000-0000-0000</a>
           </div>
         </article>
       </div>
       <div class="col-12 col-sm-12 col-md-2 col-lg-2">
-        <article class="ib-card-socials d-flex align-items-center">
-          <img src="./assets/Instagram_icon.png.webp" class="mb-3" alt="icono de instagram">
+        <article class="idb-soc-card d-flex align-items-center">
+          <img src="./assets/Instagram_icon.webp" class="idb-soc-card__image mb-3" alt="icono de instagram">
           <div class="p-1">
-            <h5 class="m-0">Instagram:</h5>
-            <p class="ps-1">@usuario_1</p>
+            <h5 class="idb-soc-card__title m-0">Instagram:</h5>
+            <a class="idb-soc-card__link streched-link link-light">@usuario1</a>
           </div>
         </article>
       </div>
       <div class="col-12 col-sm-12 col-md-2 col-lg-2">
-        <article class="ib-card-socials d-flex align-items-center">
-          <img src="./assets/facebook_icon.png" class="mb-3" alt="icono de facebook">
+        <article class="idb-soc-card d-flex align-items-center">
+          <img src="./assets/facebook_icon.png" class="idb-soc-card__image mb-3" alt="icono de facebook">
           <div class="p-1">
-            <h5 class="m-0">Facebook:</h5>
-            <p class="ps-1">@usuario_2</p>
+            <h5 class="idb-soc-card__title m-0">Facebook:</h5>
+            <a class="idb-soc-card__link streched-link link-light">@usuario2</a>
           </div>
         </article>
       </div>
       <!--formulario para comentarios-->
       <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-        <article class="ib-form d-flex justify-content-center p-1">
+        <article class="idb-contact d-flex justify-content-center p-1">
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Espero tu consulta!" aria-label="Search">
-            <button class="btn overflow-visible" type="submit">Enviar</button>
+            <button class="idb-contact__submit btn overflow-visible" type="submit">Enviar</button>
           </form>         
         </article>
       </div>

@@ -1,17 +1,20 @@
-.ib-accordion{
-    width: 530px;
+.idb-accordion{
+    width: 33rem;
     border-top-style: groove;
     border-top-color: white;
     border-top-width: 1px;
-    div{
+    .accordion-button{
+        box-shadow: none;
+    }
+    &__body{
         background-color: $brown;
         color: white;
     }
-    h2{
+    &__title{
         background-color: $brown;
         color: white;
     }
-    button{
+    &__action{
         background-color: $brown;
         color: white;
     }

@@ -1,23 +1,33 @@
 // bs -nav
 
-.ib-nav{
+.idb-nav{
     background-color: $brown;
-    h1{
+    &__brand{
         font-size: xx-large;
         color: $orange;
         overflow: hidden;
     }
-    a{
+    &__button{
+        width: 8rem;
+        display: flex;
+        justify-content: center;
         color: $brown;
         background-color: $orange;
-        border-radius: 4px;
         &:hover{
             color: $brown;
             background-color: $hoverorange;
             outline-style: none;
         }
-        &.ib-active{
+        &.idb-active{
             background-color: $selectedorange;
+        }
+        &--start{
+            border-top-left-radius: 0.6rem;
+            border-bottom-left-radius: 0.6rem;
+        }
+        &--end{
+            border-top-right-radius: 0.6rem;
+            border-bottom-right-radius: 0.6rem;
         }
     }
 }

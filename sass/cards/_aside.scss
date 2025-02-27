@@ -1,7 +1,7 @@
-.ib-hcard-alt{
-    @include card (530px, 238px);
-    border-radius: 0px;
-    a{
+.idb-expiring{
+    @include card (33rem, fit-content);
+    border-radius: 0rem 0rem 1.2rem 1.2rem;
+    &__button{
         color: $brown;
         background-color: $orange;
         border-radius: 4px;

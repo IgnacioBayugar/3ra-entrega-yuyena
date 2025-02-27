@@ -1,14 +1,17 @@
-.ib-card-socials{
-    h5{
+.idb-soc-card{
+    &__title{
         font-size: medium;
         color: white;
     }
-    p{
+    &__text{
         font-size: map-get($txt-common, fs);
         color: white;
     }
-    img{
-        height: 25px;
-        width: 25px;
+    &__image{
+        height: 1.75rem;
+        width: 1.75rem;
+    }
+    &__link{
+        font-size: 0.9rem;
     }
 }

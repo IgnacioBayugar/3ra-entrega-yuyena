@@ -1,18 +1,24 @@
-.ib-form{
-    div{
+.idb-contact{
+    &--alt{
         background-color: $brown;
-        width: 530px;
+        width: 33rem;
+        border-radius: 0rem 0rem 1.2rem 1.2rem;
+        border-top-style: groove;
+        border-top-color: white;
+        border-top-width: 0.0625rem;
     }
-    h2{
+    &__title{
         font-size: medium;
         color: white;
     }
-    button{
+    &__submit{
         background-color: $orange;
         color: $brown;
+        border-radius: 0.6rem;
         &:hover{
             background-color: $hoverorange;
             color: $brown;
         }
     }
+
 }
