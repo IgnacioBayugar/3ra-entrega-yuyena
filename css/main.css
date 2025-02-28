@@ -9,12 +9,21 @@
   background-color: #65524D;
 }
 .idb-nav__brand {
-  font-size: xx-large;
-  color: #F49867;
   overflow: hidden;
+  width: fit-content;
+}
+.idb-nav__title {
+  font-size: 2.5rem;
+  color: #F49867;
+  letter-spacing: 0.6rem;
+}
+.idb-nav__slogan {
+  font-size: 1rem;
+  color: #F49867;
+  letter-spacing: 0.7rem;
 }
 .idb-nav__button {
-  width: 8rem;
+  width: 15rem;
   display: flex;
   justify-content: center;
   color: #65524D;
@@ -31,10 +40,12 @@
 .idb-nav__button--start {
   border-top-left-radius: 0.6rem;
   border-bottom-left-radius: 0.6rem;
+  margin-right: 0.125rem;
 }
 .idb-nav__button--end {
   border-top-right-radius: 0.6rem;
   border-bottom-right-radius: 0.6rem;
+  margin-left: 0.125rem;
 }
 
 .ib-body {

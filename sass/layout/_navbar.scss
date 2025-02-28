@@ -3,12 +3,21 @@
 .idb-nav{
     background-color: $brown;
     &__brand{
-        font-size: xx-large;
-        color: $orange;
         overflow: hidden;
+        width: fit-content;
+    }
+    &__title{
+        font-size: 2.5rem;
+        color: $orange;
+        letter-spacing: 0.6rem;
+    }
+    &__slogan{
+        font-size: 1rem;
+        color: $orange;
+        letter-spacing: 0.7rem;
     }
     &__button{
-        width: 8rem;
+        width: 15rem;
         display: flex;
         justify-content: center;
         color: $brown;
@@ -24,10 +33,12 @@
         &--start{
             border-top-left-radius: 0.6rem;
             border-bottom-left-radius: 0.6rem;
+            margin-right: 0.125rem;
         }
         &--end{
             border-top-right-radius: 0.6rem;
             border-bottom-right-radius: 0.6rem;
+            margin-left: 0.125rem;
         }
     }
 }
