@@ -1,8 +1,15 @@
 .idb-hcard{
-    @include card (33rem, 236px);
-    margin-bottom: -2px;
+    @include card (40rem, fit-content);
+    margin-bottom: -0.125rem;
     border-radius: 1.2rem 1.2rem 0rem 0rem;
     &__image{
+        object-fit: cover;
         border-radius: 1.2rem 0rem 0rem 0rem;
+    }
+    &__title{
+        font-size: map-get($ttl, md);
+    }
+    &__text{
+        font-size: map-get($txt, md);
     }
 }

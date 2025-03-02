@@ -1,5 +1,4 @@
 // bs -nav
-
 .idb-nav{
     background-color: $brown;
     &__brand{
@@ -7,16 +6,17 @@
         width: fit-content;
     }
     &__title{
-        font-size: 2.5rem;
-        color: $orange;
-        letter-spacing: 0.6rem;
+        font-size: map-get($ttl, xl);
+        color: white;
+        letter-spacing: 0.3rem;
     }
     &__slogan{
-        font-size: 1rem;
-        color: $orange;
-        letter-spacing: 0.7rem;
+        font-size: map-get($ttl, sm);
+        color: white;
+        letter-spacing: 0.4rem;
     }
     &__button{
+        font-size: map-get($txt, md);
         width: 15rem;
         display: flex;
         justify-content: center;

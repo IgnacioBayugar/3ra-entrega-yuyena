@@ -1,17 +1,18 @@
 .idb-contact{
     &--alt{
         background-color: $brown;
-        width: 33rem;
+        width: 40rem;
         border-radius: 0rem 0rem 1.2rem 1.2rem;
         border-top-style: groove;
         border-top-color: white;
         border-top-width: 0.0625rem;
     }
     &__title{
-        font-size: medium;
+        font-size: map-get($ttl, sm);
         color: white;
     }
     &__submit{
+        font-size: map-get($txt, md);
         background-color: $orange;
         color: $brown;
         border-radius: 0.6rem;

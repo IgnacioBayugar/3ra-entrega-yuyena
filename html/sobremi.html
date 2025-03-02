@@ -20,11 +20,11 @@
     <header class="row idb-nav">
       <div class="row g-0 d-flex justify-content-center">
         <a class="idb-nav__brand navbar-brand animate__animated animate__zoomIn" href="./index.html"><h1 class="idb-nav__title m-0 pt-2">YUYENA</h1></a>
-        <p class="idb-nav__slogan d-flex justify-content-center m-0">-PASTELERIA-</p>
+        <p class="idb-nav__slogan d-flex justify-content-center m-0">=PASTELERIA=</p>
       </div>
       <nav class="navbar navbar-expand">
           <div class="justify-content-center navbar-collapse p-0">
-            <ul class="navbar-nav pt-3 pb-1">
+            <ul class="navbar-nav py-1">
               <li class="nav-item">
                 <a class="idb-nav__button idb-nav__button--start nav-link p-1" href="../index.html">Inicio</a>
               <li class="nav-item">
@@ -38,18 +38,21 @@
         </div>
       </nav>
     </header>
-    <main class="row g-0 mt-5">
+    <main class="row g-0">
+      <div class="col-12 mt-4 pb-3 d-flex justify-content-center">
+        <h2 class="idb-title d-flex justify-content-center px-4">- Trayectoria -</h2>
+      </div>
       <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center align-items-center ">
         <!--card especial para introducir a la autora-->
         <article class="card idb-hcard animate__animated animate__fadeIn">
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-md-5">
               <img src="../assets/fotoautora_sobremi.jpg" class="idb-hcard__image img-fluid" alt="foto de la autora">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7">
               <div class="card-body">
-                <h5 class="card-title">Miriam Farias</h5>
-                <p class="card-text">Soy Miriam, una pastelera apasionada por hacer tortas y dulces deliciosos para todo tipo de celebraciones. Me encanta crear opciones frescas, personalizadas y llenas de sabor para que cada momento sea más especial.</p>
+                <h5 class="idb-hcard__title card-title pt-1">Miriam Farias</h5>
+                <p class="idb-hcard__text card-text pt-4 px-2">Soy Miriam, soy una pastelera profesional apasionada por hacer tortas artísticas y dulces deliciosos para todo tipo de celebraciones. Me entusiasma crear opciones nuevas, personalizadas y rebosantes de sabor para que cada momento sea más especial e inolvidable.</p>
               </div>
             </div>
           </div>
@@ -92,23 +95,23 @@
           <article class="accordion idb-accordion accordion-flush animate__animated animate__fadeIn" id="accordionFlushExample">
             <!--acordion con la formacion y trayectoria profesional-->
             <div class="idb-accordion__body accordion-item">
-              <h2 class="idb-accordion__title accordion-header">
-                <button class="idb-accordion__action accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <h3 class="accordion-header">
+                <button class="idb-accordion__action idb-accordion__title accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                   - Experiencia Laboral
                 </button>
-              </h2>
+              </h3>
               <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Mas de 20 años de experiencia en la pasteleria profesional con mi propia empresa "Yuyena Pastelería", realizando trabajos de pasteleria artesanal en bodas, egresos, cumpleaños, eventos publicos y más.</div>
+                <div class="accordion-body idb-accordion__text">Mas de 20 años de experiencia en la pasteleria profesional con mi propia empresa "Yuyena Pastelería", realizando trabajos de pasteleria artesanal en bodas, egresos, cumpleaños, eventos publicos y más.</div>
               </div>
             </div>
             <div class="idb-accordion__body accordion-item">
-              <h2 class="accordion-header">
-                <button class="idb-accordion__action accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <h3 class="accordion-header">
+                <button class="idb-accordion__action idb-accordion__title accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                   - Formacion Academica
                 </button>
-              </h2>
+              </h3>
               <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Diplomado en Pasteleria Artesanal -Escuela de gastronomía 2015. <br> Curso "Técnicas Avanzadas - Repostería" -Instituto Culinario 2017. <br> Taller de Dulces y Postres Finos -Academia de Pastelería 2020.</div>
+                <div class="accordion-body idb-accordion__text">Diplomado en Pasteleria Artesanal -Escuela de gastronomía 2015. <br> Curso "Técnicas Avanzadas - Repostería" -Instituto Culinario 2017. <br> Taller de Dulces y Postres Finos -Academia de Pastelería 2020.</div>
               </div>
             </div>
           </article>    
@@ -116,12 +119,12 @@
         <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center">
          <!--aside para una inscripcion de cupos limitados, una vez completos los cupos, se retira-->
           <aside class="card idb-expiring animate__animated animate__fadeIn">
-            <div class="card-header">
-              Nuevo curso disponible! - Cupos limitados
+            <div class="idb-expiring__header card-header">
+              Nuevo curso disponible<span class="ib-badge badge text-bg-danger ms-2">Cupos limitados!</span>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Curso Pastelería</h5>
-              <p class="card-text">Cursos de pastelería donde aprenderás técnicas y recetas para crear deliciosos postres y tortas como un profesional.</p>
+              <h5 class="idb-expiring__title card-title">Curso Pastelería</h5>
+              <p class="idb-expiring__text card-text">Cursos de pastelería donde aprenderás técnicas y recetas para crear deliciosos postres y tortas como un profesional. Se dictan de manera presencial y cuenta con certificado de finalización.</p>
               <div class="d-flex justify-content-end pt-3">
               <a href="#" class="idb-expiring__button btn btn-primary">Anotarse</a>
               </div>
@@ -131,47 +134,55 @@
       </div>
     </main>
     <footer class="row g-0 idb-end d-flex align-items-center">
+      <div class="col-12 d-flex justify-content-center">
+        <h4 class="idb-end__title py-2">- Contactanos -</h4>
+      </div>
       <!--apartado redes sociales-->
-      <div class="col-12 col-sm-12 col-md-2 col-lg-2">
-      <article class="idb-end__body d-flex justify-content-center">
-        <p class="idb-end__text">Seguime en mis redes:</p>
-      </article>
-      </div>
-      <div class="col-12 col-sm-12 col-md-2 col-lg-2">
-        <article class="idb-soc-card d-flex align-items-center">
-          <img src="../assets/whatsapp_icon.png" class="idb-soc-card__image mb-3" alt="icono de whatsapp">
-          <div class="p-1">
-            <h5 class="idb-soc-card__title m-0">Whatsapp:</h5>
-            <a class="idb-soc-card__link streched-link link-light">000-0000-0000</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-12 col-sm-12 col-md-2 col-lg-2">
-        <article class="idb-soc-card d-flex align-items-center">
-          <img src="../assets/Instagram_icon.webp" class="idb-soc-card__image mb-3" alt="icono de instagram">
-          <div class="p-1">
-            <h5 class="idb-soc-card__title m-0">Instagram:</h5>
-            <a class="idb-soc-card__link streched-link link-light">@usuario1</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-12 col-sm-12 col-md-2 col-lg-2">
-        <article class="idb-soc-card d-flex align-items-center">
-          <img src="../assets/facebook_icon.png" class="idb-soc-card__image mb-3" alt="icono de facebook">
-          <div class="p-1">
-            <h5 class="idb-soc-card__title m-0">Facebook:</h5>
-            <a class="idb-soc-card__link streched-link link-light">@usuario2</a>
-          </div>
-        </article>
-      </div>
-      <!--formulario para comentarios-->
-      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-        <article class="idb-contact d-flex justify-content-center p-1">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Espero tu consulta!" aria-label="Search">
-            <button class="idb-contact__submit btn overflow-visible" type="submit">Enviar</button>
-          </form>         
-        </article>
+      <div class="idb-end row g-0 d-flex align-items-center">
+        <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+          <article class="idb-end__body d-flex justify-content-center">
+            <p class="idb-end__text">Mis redes:</p>
+          </article>
+        </div>
+        <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+          <article class="idb-soc-card d-flex align-items-end">
+            <img src="../assets/whatsapp_icon.png" class="idb-soc-card__image mb-3" alt="icono de whatsapp">
+            <div class="p-1">
+              <h5 class="idb-soc-card__title m-0">Whatsapp:</h5>
+              <a class="idb-soc-card__link streched-link link-light ps-1">000-0000-0000</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+          <article class="idb-soc-card d-flex align-items-end">
+            <img src="../assets/Instagram_icon.webp" class="idb-soc-card__image mb-3" alt="icono de instagram">
+            <div class="p-1">
+              <h5 class="idb-soc-card__title m-0">Instagram:</h5>
+              <a class="idb-soc-card__link streched-link link-light ps-2">@usuario1</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+          <article class="idb-soc-card d-flex align-items-end">
+            <img src="../assets/facebook_icon.png" class="idb-soc-card__image mb-3" alt="icono de facebook">
+            <div class="p-1">
+              <h5 class="idb-soc-card__title m-0">Facebook:</h5>
+              <a class="idb-soc-card__link streched-link link-light ps-2">@usuario2</a>
+            </div>
+          </article>
+        </div>
+        <!--formulario para comentarios-->
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+          <article class="idb-contact d-flex justify-content-center p-1">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Espero tu consulta!" aria-label="Search">
+              <button class="idb-contact__submit btn overflow-visible" type="submit">Enviar</button>
+            </form>         
+          </article>
+        </div>
+        <div class="row g-0 idb-end idb-end--close pt-3">
+          <p class=" d-flex justify-content-center">© 2024 YUYENA. Todos los derechos reservados.</p>
+        </div>
       </div>
     </footer>
   </div>

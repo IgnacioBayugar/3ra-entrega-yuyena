@@ -20,11 +20,11 @@
     <header class="row idb-nav">
       <div class="row g-0 d-flex justify-content-center">
         <a class="idb-nav__brand navbar-brand animate__animated animate__zoomIn" href="./index.html"><h1 class="idb-nav__title m-0 pt-2">YUYENA</h1></a>
-        <p class="idb-nav__slogan d-flex justify-content-center m-0">-PASTELERIA-</p>
+        <p class="idb-nav__slogan d-flex justify-content-center m-0">=PASTELERIA=</p>
       </div>
       <nav class="navbar navbar-expand">
           <div class="justify-content-center navbar-collapse p-0">
-            <ul class="navbar-nav pt-3 pb-1">
+            <ul class="navbar-nav py-1">
               <li class="nav-item">
                 <a class="idb-nav__button idb-nav__button--start nav-link p-1" href="../index.html">Inicio</a>
               <li class="nav-item">
@@ -38,53 +38,56 @@
         </div>
       </nav>
     </header>
-    <main class="row g-0 my-3">
+    <main class="row g-0 pb-4">
+      <div class="col-12 mt-4 pb-3 d-flex justify-content-center">
+        <h2 class="idb-title d-flex justify-content-center px-4">- informacion de Contacto -</h2>
+      </div>
       <!--Una card especial para mostrar la ubicacion del local-->
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center py-3">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-end pe-3">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2356.0221426399576!2d-64.25936065085433!3d-27.777599875733415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b523dac7bd8eb%3A0xcff8e5d9a2296d6d!2sPortal%20Santiago!5e0!3m2!1ses-419!2sar!4v1740681192731!5m2!1ses-419!2sar" class="idb-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
       </div>
-      <div class=" col-12 col-sm-12 col-md-6 col-lg-6 py-3 ps-3">
+      <div class=" col-12 col-sm-12 col-md-6 col-lg-6 ps-3">
         <div class="idb-titles idb-titles--alt pt-2 d-flex justify-content-center animate__animated animate__fadeIn">
-          <h2 class="idb-carousel__title">Te dejo informacion util!</h2>
+          <h2 class="idb-carousel__title py-2">Te dejo informacion util!</h2>
         </div>
         <article class="idb-accordion accordion accordion-flush animate__animated animate__fadeIn" id="accordionFlushExample">
           <!--accordion con los detalles mas importantes a explicar-->
           <div class="idb-accordion__body accordion-item">
             <h2 class="idb-accordion__title accordion-header">
-              <button class="idb-accordion__action accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <button class="idb-accordion__action idb-accordion__title accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 - Horarios
               </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              <div class="accordion-body idb-accordion__text">Nos encontramos abiertos para ti en los siguientes horarios: <br>Lunes a Viernes: 8:00 AM - 7:00 PM <br>Sábados: 9:00 AM - 5:00 PM <br>Domingos: Cerrado</div>
             </div>
           </div>
           <div class="idb-accordion__body accordion-item">
             <h2 class="idb-accordion__title accordion-header">
-              <button class="idb-accordion__action accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                - Delivery
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-            </div>
-          </div>
-          <div class="idb-accordion__body accordion-item">
-            <h2 class="idb-accordion__title accordion-header">
-              <button class="idb-accordion__action accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <button class="idb-accordion__action idb-accordion__title accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                 - Encargos
               </button>
             </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body idb-accordion__text">Los encargos se realizan con una seña del 50% del total. El saldo restante se paga al momento de la entrega. Asegúrate de reservar con anticipación para garantizar tu pedido</div>
+            </div>
+          </div>
+          <div class="idb-accordion__body accordion-item">
+            <h2 class="idb-accordion__title accordion-header">
+              <button class="idb-accordion__action idb-accordion__title accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                - Reparto
+              </button>
+            </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              <div class="accordion-body idb-accordion__text">Ofrecemos servicio de delivery a domicilio en un horario de lunes a sábado, de 9:00 AM a 6:00 PM. El costo de la entrega varía según la ubicación. Aceptamos pagos en efectivo y tarjeta al momento de la entrega. ¡Haz tu encargo y te lo llevamos hasta la puerta!</div>
             </div>
           </div>
         </article>
         <article class="idb-contact idb-contact--alt animate__animated animate__fadeIn">
           <!--form para preguntas especificas del footer ahora como contenido principal, colocado de manera mas estrategica en la pagina-->
-          <div class="d-flex justify-content-start align-items-center p-1">
-            <h2 class="idb-contact__title px-2 pt-1">Tienes otra pregunta?</h2>
-            <form class="d-flex ps-2" role="search">
+          <div class="d-flex justify-content-center align-items-center p-1">
+            <h2 class="idb-contact__title py-4">Tienes otra pregunta?</h2>
+            <form class="d-flex ps-2 py-2" role="search">
               <input class="form-control me-2" type="search" placeholder="Espero tu consulta!" aria-label="Search">
               <button class="idb-contact__submit btn overflow-visible" type="submit">Enviar</button>
             </form>         
@@ -93,38 +96,46 @@
       </div>
     </main>
     <footer class="row g-0 idb-end d-flex align-items-center">
-      <!--apartado redes sociales sin el from-->
-      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-      <article class="idb-end__body d-flex justify-content-center">
-        <p class="idb-end__text">Seguime en mis redes:</p>
-      </article>
+      <div class="col-12 d-flex justify-content-center">
+        <h4 class="idb-end__title py-2">- Contactanos -</h4>
       </div>
-      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-        <article class="idb-soc-card d-flex align-items-center">
-          <img src="../assets/whatsapp_icon.png" class="idb-soc-card__image mb-3" alt="icono de whatsapp">
-          <div class="p-1">
-            <h5 class="idb-soc-card__title m-0">Whatsapp:</h5>
-            <a class="idb-soc-card__link streched-link link-light">000-0000-0000</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-        <article class="idb-soc-card d-flex align-items-center">
-          <img src="../assets/Instagram_icon.webp" class="idb-soc-card__image mb-3" alt="icono de instagram">
-          <div class="p-1">
-            <h5 class="idb-soc-card__title m-0">Instagram:</h5>
-            <a class="idb-soc-card__link streched-link link-light">@usuario1</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-        <article class="idb-soc-card d-flex align-items-center">
-          <img src="../assets/facebook_icon.png" class="idb-soc-card__image mb-3" alt="icono de facebook">
-          <div class="p-1">
-            <h5 class="idb-soc-card__title m-0">Facebook:</h5>
-            <a class="idb-soc-card__link streched-link link-light">@usuario2</a>
-          </div>
-        </article>
+      <!--apartado redes sociales-->
+      <div class="idb-end row g-0 d-flex align-items-center">
+        <div class="col-12 col-sm-12 col-md-2 col-lg-3">
+          <article class="idb-end__body d-flex justify-content-center">
+            <p class="idb-end__text">Mis redes:</p>
+          </article>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <article class="idb-soc-card d-flex align-items-end">
+            <img src="../assets/whatsapp_icon.png" class="idb-soc-card__image mb-3" alt="icono de whatsapp">
+            <div class="p-1">
+              <h5 class="idb-soc-card__title m-0">Whatsapp:</h5>
+              <a class="idb-soc-card__link streched-link link-light ps-1">000-0000-0000</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <article class="idb-soc-card d-flex align-items-end">
+            <img src="../assets/Instagram_icon.webp" class="idb-soc-card__image mb-3" alt="icono de instagram">
+            <div class="p-1">
+              <h5 class="idb-soc-card__title m-0">Instagram:</h5>
+              <a class="idb-soc-card__link streched-link link-light ps-2">@usuario1</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <article class="idb-soc-card d-flex align-items-end">
+            <img src="../assets/facebook_icon.png" class="idb-soc-card__image mb-3" alt="icono de facebook">
+            <div class="p-1">
+              <h5 class="idb-soc-card__title m-0">Facebook:</h5>
+              <a class="idb-soc-card__link streched-link link-light ps-2">@usuario2</a>
+            </div>
+          </article>
+        </div>
+        <div class="row g-0 idb-end idb-end--close pt-3">
+          <p class=" d-flex justify-content-center">© 2024 YUYENA. Todos los derechos reservados.</p>
+        </div>
       </div>
     </footer>
   </div>

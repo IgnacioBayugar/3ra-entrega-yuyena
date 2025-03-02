@@ -1,6 +1,6 @@
 .idb-carousel{
-    max-width: 33rem;
-    max-height: 238px;
+    max-width: 40rem;
+    max-height: 22.2rem;
     border-radius: 1.2rem 1.2rem 0rem 0rem;
     overflow: hidden;
     div.ib-titlecard{
@@ -10,7 +10,7 @@
         object-fit: cover;
     }
     &__title{
+        font-size: map-get($ttl, md);
         color: white;
-        font-size: medium;
     }
 }

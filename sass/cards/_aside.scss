@@ -1,10 +1,20 @@
 .idb-expiring{
-    @include card (33rem, fit-content);
+    @include card (40rem, fit-content);
     border-radius: 0rem 0rem 1.2rem 1.2rem;
+    &__header{
+        font-size: map-get($txt, md);   
+    }
+    &__title{
+        font-size: map-get($ttl, md);
+    }
+    &__text{
+        font-size: map-get($txt, md);
+    }
     &__button{
+        font-size: map-get($txt, md);
         color: $brown;
         background-color: $orange;
-        border-radius: 4px;
+        border-radius: 0.6rem;
         border-style: none;
         &:hover{
             color: $brown;

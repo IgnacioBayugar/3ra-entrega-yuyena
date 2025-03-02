@@ -1,5 +1,5 @@
 .idb-accordion{
-    width: 33rem;
+    width: 40rem;
     border-top-style: groove;
     border-top-color: white;
     border-top-width: 1px;
@@ -11,8 +11,12 @@
         color: white;
     }
     &__title{
+        font-size: map-get($ttl, sm);
         background-color: $brown;
         color: white;
+    }
+    &__text{
+        font-size: map-get($txt, md);
     }
     &__action{
         background-color: $brown;

@@ -1,15 +1,20 @@
 .idb-card{
-    @include card (37rem, 16rem);
+    @include card (fit-content, fit-content);
     overflow: hidden;
     border-radius: 1.2rem;
+    border-color: $brown;
+    border-width: 0.1rem;
     &__image{
-        min-height: 16rem;
         object-fit: cover;
+    }
+    &__title{
+        font-size: map-get($ttl, md);
     }
     &__text{
         font-size: map-get($txt, md);
     }
     &__button{
+        font-size: map-get($txt, md);
         border-radius: 0.6rem;
         color: $brown;
         background-color: $orange;
@@ -25,7 +30,7 @@
         border-width: 0.1rem;
         border-radius: 1.2rem;
         .idb-card__image{
-            height: 12rem;
+            height: 18rem;
         }
     }
 }
