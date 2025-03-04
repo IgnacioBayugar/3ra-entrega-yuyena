@@ -1,23 +1,22 @@
-div .idb-title{
-    font-size: map-get($ttl, md);
-    letter-spacing: 0.2rem;
+.idb-category{
     background-color: $brown;
-    width: fit-content;
     color: white;
-    border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+    border-radius: 0rem 0rem 1.2rem 1.2rem;
+    &__title{
+        font-size: map-get($ttl, xxs);
+        letter-spacing: 0.2rem;
+    }
 }
 .idb-gtext{
     font-size: medium;
     color: black;
 }
-div .idb-titles{
+.idb-header{
     width: 40rem;
     background-color: $brown;
+    border-radius: 1.2rem 1.2rem 0rem 0rem;
     &__headline{
         color: white;
         font-size: large;
-    }
-    &--alt{
-        border-radius: 1.2rem 1.2rem 0rem 0rem;
     }
 }

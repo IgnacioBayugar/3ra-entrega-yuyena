@@ -18,7 +18,7 @@
   letter-spacing: 0.3rem;
 }
 .idb-nav__slogan {
-  font-size: 1.375rem;
+  font-size: 1.5rem;
   color: white;
   letter-spacing: 0.4rem;
 }
@@ -66,7 +66,7 @@
   color: white;
 }
 .idb-end--close {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   letter-spacing: 0.3rem;
   height: 2.5rem;
   color: white;
@@ -77,6 +77,7 @@
   height: fit-content;
   background-color: #65524D;
   color: white;
+  max-height: 25rem;
   overflow: hidden;
   border-radius: 1.2rem;
   border-color: #65524D;
@@ -84,12 +85,17 @@
 }
 .idb-card__image {
   object-fit: cover;
+  border-radius: 1.2rem 0rem 0rem 1.2rem;
+  height: 100%;
+  max-width: 100%;
 }
 .idb-card__title {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
 }
 .idb-card__text {
   font-size: 1.125rem;
+  text-align: justify;
+  hyphens: auto;
 }
 .idb-card__button {
   font-size: 1.125rem;
@@ -106,6 +112,7 @@
   height: fit-content;
   background-color: #65524D;
   color: white;
+  max-height: none;
   border-style: groove;
   border-color: #65524D;
   border-width: 0.1rem;
@@ -126,20 +133,18 @@
 .idb-hcard__image {
   object-fit: cover;
   border-radius: 1.2rem 0rem 0rem 0rem;
+  height: 100%;
+  max-width: 100%;
 }
 .idb-hcard__title {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
 }
 .idb-hcard__text {
   font-size: 1.125rem;
 }
 
 .idb-soc-card__title {
-  font-size: medium;
-  color: white;
-}
-.idb-soc-card__text {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: white;
 }
 .idb-soc-card__image {
@@ -147,16 +152,17 @@
   width: 1.75rem;
 }
 .idb-soc-card__link {
-  font-size: 0.9rem;
+  font-size: 1.125rem;
 }
 
-div .idb-title {
-  font-size: 1.75rem;
-  letter-spacing: 0.2rem;
+.idb-category {
   background-color: #65524D;
-  width: fit-content;
   color: white;
-  border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+  border-radius: 0rem 0rem 1.2rem 1.2rem;
+}
+.idb-category__title {
+  font-size: 1.25rem;
+  letter-spacing: 0.2rem;
 }
 
 .idb-gtext {
@@ -164,16 +170,14 @@ div .idb-title {
   color: black;
 }
 
-div .idb-titles {
+.idb-header {
   width: 40rem;
   background-color: #65524D;
+  border-radius: 1.2rem 1.2rem 0rem 0rem;
 }
-div .idb-titles__headline {
+.idb-header__headline {
   color: white;
   font-size: large;
-}
-div .idb-titles--alt {
-  border-radius: 1.2rem 1.2rem 0rem 0rem;
 }
 
 .idb-expiring {
@@ -187,7 +191,7 @@ div .idb-titles--alt {
   font-size: 1.125rem;
 }
 .idb-expiring__title {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
 }
 .idb-expiring__text {
   font-size: 1.125rem;
@@ -214,7 +218,7 @@ div .idb-titles--alt {
   border-top-width: 0.0625rem;
 }
 .idb-contact__title {
-  font-size: 1.375rem;
+  font-size: 2rem;
   color: white;
 }
 .idb-contact__submit {
@@ -242,7 +246,7 @@ div .idb-titles--alt {
   color: white;
 }
 .idb-accordion__title {
-  font-size: 1.375rem;
+  font-size: 2rem;
   background-color: #65524D;
   color: white;
 }
@@ -260,20 +264,21 @@ div .idb-titles--alt {
 }
 
 .idb-carousel {
-  max-width: 40rem;
-  max-height: 22.2rem;
+  width: 40rem;
+  height: 19.7rem;
   border-radius: 1.2rem 1.2rem 0rem 0rem;
   overflow: hidden;
 }
-.idb-carousel div.ib-titlecard {
-  background-color: #65524D;
-}
 .idb-carousel__image {
   object-fit: cover;
+  max-height: 100%;
+}
+.idb-carousel__header {
+  color: white;
+  background-color: #65524D;
 }
 .idb-carousel__title {
-  font-size: 1.75rem;
-  color: white;
+  font-size: 2.25rem;
 }
 
 .idb-map {
@@ -286,71 +291,90 @@ div .idb-titles--alt {
 }
 
 /*MEDIA QUERIES*/
-@media (max-width: 768px) and (min-width: 577px) {
+@media (max-width: 992px) {
   /*RESET*/
   * {
     overflow-y: visible;
   }
   /*product card*/
   .idb-card {
-    width: 20rem;
+    width: 30rem;
+    height: fit-content;
+    max-height: none;
+    margin-bottom: 1rem;
+    overflow: visible;
+    border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+  }
+  .idb-card__image {
+    object-fit: cover;
+    border-radius: 1.2rem 0rem 0rem 1.2rem;
+  }
+  .idb-card--alt .idb-card__image {
+    border-radius: 0rem 1.2rem 0rem 0rem;
+  }
+  .idb-card__title {
+    font-size: 2rem;
+  }
+  .idb-card__text {
+    font-size: 0.875rem;
+  }
+  /*horizontal autor card*/
+  .idb-hcard {
+    width: 40rem;
     height: fit-content;
     margin-bottom: 1rem;
     overflow: visible;
+    border-radius: 1.2rem;
   }
-  .idb-card__img {
-    width: 100%;
-    height: 16rem;
-    border-radius: 0, 3rem;
+  .idb-hcard__image {
+    border-radius: 1.2rem 0rem 0rem 1.2rem;
   }
-  /*horizontal autor card*/
-  .ib-hcard {
-    max-width: 20rem;
-    max-height: fit-content;
+  .idb-accordion {
+    width: 40rem;
   }
   /*horizontal aside card*/
   .idb-expiring {
-    width: 20rem;
+    width: 40rem;
     height: fit-content;
     background-color: #65524D;
     color: white;
+    border-radius: 1.2rem;
+    margin-top: 2rem;
   }
   /*horizontal location card*/
   .idb-map {
-    width: 20rem;
+    width: 40rem;
+    margin-bottom: 2rem;
   }
   /*footer - general*/
   .idb-end {
-    max-height: fit-content;
+    height: fit-content;
     overflow-y: visible;
+  }
+  .idb-soc-card {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
   }
   .idb-contact div {
     width: fit-content;
   }
-  .ib-form-alt div {
-    width: 75%;
-  }
   /*general components*/
-  .idb-accordion {
-    width: 22rem;
-  }
-  /*specialiced title card*/
-  div .ib-titlecard {
-    display: flex;
-    justify-content: center;
-    width: 75%;
-  }
-  .ib-titlecard-alt {
-    max-width: 100%;
-  }
 }
 @media (max-width: 576px) {
-  /*product card*/
   .idb-nav__brand {
-    font-size: larger;
+    font-size: 1.5rem;
+  }
+  .idb-nav__slogan {
+    font-size: 1.25rem;
   }
   .idb-nav__button {
+    font-size: 0.875rem;
     width: 7rem;
+  }
+  .idb-category__title {
+    font-size: 1.2rem;
+    letter-spacing: normal;
   }
   .idb-card {
     width: 20rem;
@@ -358,15 +382,61 @@ div .idb-titles--alt {
     margin-bottom: 1rem;
     overflow: visible;
   }
-  .idb-card__img {
-    width: 100%;
-    height: 16rem;
-    border-radius: 0, 3rem;
+  .idb-card__image {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1.2rem 1.2rem 0rem 0rem;
+  }
+  .idb-card__title {
+    font-size: 1.25rem;
+  }
+  .idb-card__text {
+    font-size: 0.875rem;
+  }
+  .idb-card__button {
+    font-size: 0.875rem;
+  }
+  .idb-card--alt {
+    width: 20rem;
+  }
+  .idb-card--alt .idb-card__image {
+    width: 19.9rem;
+    border-radius: 1.2rem 1.2rem 0rem 0rem;
   }
   /*horizontal autor card*/
-  .ib-hcard {
-    max-width: 20rem;
+  .idb-hcard {
+    width: 20rem;
     max-height: fit-content;
+  }
+  .idb-hcard__image {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1.2rem 1.2rem 0rem 0rem;
+  }
+  .idb-hcard__title {
+    font-size: 1.25rem;
+  }
+  .idb-hcard__text {
+    font-size: 0.875rem;
+  }
+  .idb-carousel {
+    width: 20rem;
+    height: 15rem;
+  }
+  .idb-carousel__title {
+    font-size: 1.125rem;
+  }
+  .idb-carousel__image {
+    object-fit: cover;
+  }
+  .idb-accordion {
+    width: 20rem;
+  }
+  .idb-accordion__title {
+    font-size: 1.125rem;
+  }
+  .idb-accordion__text {
+    font-size: 0.875rem;
   }
   /*horizontal aside card*/
   .idb-expiring {
@@ -375,8 +445,33 @@ div .idb-titles--alt {
     background-color: #65524D;
     color: white;
   }
+  .idb-expiring__header {
+    font-size: 0.875rem;
+  }
+  .idb-expiring__title {
+    font-size: 1.25rem;
+  }
+  .idb-expiring__text {
+    font-size: 0.875rem;
+  }
+  .idb-expiring__button {
+    font-size: 0.875rem;
+  }
   /*horizontal location card*/
   .idb-map {
+    width: 20rem;
+    height: 20rem;
+  }
+  .idb-header {
+    width: 20rem;
+  }
+  .idb-contact__title {
+    font-size: 1.25rem;
+  }
+  .idb-contact__submit {
+    font-size: 0.875rem;
+  }
+  .idb-contact--alt {
     width: 20rem;
   }
   /*footer - general*/
@@ -384,28 +479,23 @@ div .idb-titles--alt {
     height: fit-content;
     overflow: visible;
   }
-  div .idb-contact {
-    width: 22rem;
+  .idb-end__text {
+    font-size: 1.25rem;
   }
-  div .idb-contact--alt {
-    background-color: #65524D;
-    width: 22rem;
+  .idb-end--close {
+    font-size: 0.75rem;
+    letter-spacing: normal;
   }
-  .idb-form-alt div {
-    width: 94%;
+  .idb-soc-card__title {
+    font-size: 0.75rem;
+    color: white;
   }
-  /*general components*/
-  .idb-accordion {
-    width: 22rem;
+  .idb-soc-card__image {
+    height: 1.5rem;
+    width: 1.5rem;
   }
-  /*specialiced title card*/
-  div .idb-titles {
-    display: flex;
-    justify-content: center;
-    width: 22rem;
-  }
-  div .idb-titles--alt {
-    width: 22rem;
+  .idb-soc-card__link {
+    font-size: 0.65rem;
   }
 }
 
