@@ -1,4 +1,4 @@
-.idb-end{
+.idb-end{ //seccion inferior de la pagina
     background-color: $brown;
     height: 4.0625rem;
     overflow: visible;
@@ -6,11 +6,11 @@
         color: white;
     }
     &__text{
-        font-size: map-get($txt, md);        
+        font-size: map-get($txt-size, md);        
         color: white;
     }
     &--close{
-        font-size: map-get($txt, xs);  
+        font-size: map-get($txt-size, xs);  
         letter-spacing: 0.3rem;
         height: 2.5rem;
         color: white;

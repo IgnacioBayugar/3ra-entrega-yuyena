@@ -1,99 +1,168 @@
 /*MEDIA QUERIES*/
-@media (max-width: 992px) {
-    /*RESET*/
-     *{
-         overflow-y: visible;
-     }
-     /*product card*/
-     .idb-card{
-         width: 30rem;
-         height: fit-content;
-         max-height: none;
-         margin-bottom: 1rem;
-         overflow: visible;
-         border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
-         &__image{
-            object-fit: cover;
-            border-radius: 1.2rem 0rem 0rem 1.2rem;
-        }
-        &--alt{
-            .idb-card__image{
-                border-radius: 0rem 1.2rem 0rem 0rem;
-            }
-        }
-        &__title{
-            font-size: map-get($ttl, sm);
-        }
-        &__text{
-            font-size: map-get($txt, xs);
-        }
-
-     }
-     /*horizontal autor card*/
-     .idb-hcard{
-        width: 40rem;
-        height: fit-content;
-        margin-bottom: 1rem;
-        overflow: visible;
-        border-radius: 1.2rem;
-        &__image{
-            border-radius: 1.2rem 0rem 0rem 1.2rem;
-        }
-    
-     }
-     .idb-accordion{
-        width: 40rem;
-    }
-     /*horizontal aside card*/
-     .idb-expiring{
-        @include card (40rem, fit-content);
-        border-radius: 1.2rem;
-        margin-top: 2rem;
-     }
-     /*horizontal location card*/
-     .idb-map{
-        width: 40rem;
-        margin-bottom: 2rem;
-     }
-     /*footer - general*/
-     .idb-end{
-        height: fit-content;
-        overflow-y: visible;
-     }
-     .idb-soc-card{
-        display: flex;
-        justify-content: center;
-        padding-bottom: 1rem;
-     }
-     .idb-contact div{
-         width: fit-content;
-     }
-     /*general components*/
-
-}
-
-@media (max-width: 576px) {
+@media (min-width: 576px) and (max-width: 991px) {
     .idb-nav{
-        &__brand{
-        font-size: map-get($ttl, xs);
+        &__title{
+        font-size: map-get($txt-size, brand, tablet);
         }
-        &__slogan{
-            font-size: map-get($ttl, xxs);
+        &__subtitle{
+            font-size: map-get($txt-size, brand-alt, tablet);
         }
         &__button{
-            font-size: map-get($txt, xs);
+            font-size: map-get($txt-size, base, tablet);
+            width: 12.5rem;
+        }
+    }
+    .idb-category{
+        &__title{
+            font-size: map-get($txt-size, base, tablet);
+            letter-spacing: 0.1rem;
+        }
+    }
+    .idb-card{
+        @include sizing (50rem, fit-content);
+        max-height: none;
+        margin-bottom: 1rem;
+        overflow: visible;
+        &__image{
+           width: 100%;
+           height: 100%;
+           border-radius: 1.2rem 0rem 0rem 1.2rem;
+        }
+        &__title{
+            font-size: map-get($txt-size, card-ttl, tablet);
+        }
+        &__text{
+            font-size: map-get($txt-size, card, tablet);
+        }
+        &__button{
+            font-size: map-get($txt-size, base, tablet);
+        }
+        &--alt{
+            width: 50rem;
+            .idb-card__image{
+                width: 100%;
+                border-radius: 1.2rem 1.2rem 0rem 0rem;
+            }
+        }
+    }
+    /*horizontal autor card*/
+    .idb-hcard{
+        @include sizing (50rem, fit-content);
+        border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+        &__image{
+            height: 100%;
+            border-radius: 1.2rem 0rem 0rem 1.2rem;
+        }
+        &__title{
+            font-size: map-get($txt-size, card-ttl, tablet);
+        }
+        &__text{
+            font-size: map-get($txt-size, card, tablet);
+        }
+    }
+    .idb-carousel{
+        width: 50rem;
+        height: 18rem;
+        &__title{
+            font-size: map-get($txt-size, base, tablet);
+        }
+    }
+    .idb-accordion{
+        width: 50rem;
+        &__title{
+            font-size: map-get($txt-size, base, tablet);
+        }
+        &__text{
+            font-size: map-get($txt-size, base, tablet);
+        }
+    }
+    /*horizontal aside card*/
+    .idb-expiring{
+       @include sizing (50rem, fit-content);
+       border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+       margin-top: 2.5rem;
+       &__header{
+         font-size: map-get($txt-size, base, tablet);   
+        }
+        &__title{
+            font-size: map-get($txt-size, card-ttl, tablet);
+        }
+        &__text{
+            font-size: map-get($txt-size, card, tablet);
+        }
+        &__button{
+            font-size: map-get($txt-size, base, tablet);
+        }
+    }
+    /*horizontal location card*/
+    .idb-map{
+       width: 50rem; 
+       height: 35rem;
+       margin-top: 0.5rem;
+    }
+    .idb-header{
+        width: 50rem;
+        margin-top: 1.5rem;
+    }
+    .idb-contact{
+        margin-bottom: 1.5rem;
+        &__title{
+            font-size: map-get($txt-size, secondary, tablet);
+        }
+        &__submit{
+            font-size: map-get($txt-size, secondary, tablet);
+        }
+        &--alt{
+            width: 50rem;
+        }
+    }
+    /*footer - general*/
+    .idb-end{
+        height: fit-content;
+        overflow: hidden;
+        &--close{
+            font-size: map-get($txt-size, secondary, tablet);
+            letter-spacing: normal;
+        }
+    }
+    .idb-soc-card{
+        &__title{
+            font-size: map-get($txt-size, secondary, tablet);
+            color: white;
+        }
+        &__image{
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+        &__link{
+            font-size: map-get($txt-size, secondary, tablet);
+        }
+    }
+
+}
+@media (max-width: 575px) {
+    .idb-nav{
+        &__brand{
+        font-size: map-get($txt-size, xs);
+        }
+        &__subtitle{
+            font-size: map-get($txt-size, xxs);
+        }
+        &__button{
+            font-size: map-get($txt-size, xs);
             width: 7rem;
         }
     }
     .idb-category{
         &__title{
-            font-size: map-get($ttl, xxxs);
+            font-size: map-get($txt-size, base, mobile);
             letter-spacing: normal;
         }
     }
     .idb-card{
         width: 20rem;
         height: fit-content;
+        max-height: none;
         margin-bottom: 1rem;
         overflow: visible;
         &__image{
@@ -102,13 +171,13 @@
            border-radius: 1.2rem 1.2rem 0rem 0rem;
         }
          &__title{
-            font-size: map-get($ttl, xxs);
+            font-size: map-get($txt-size, card-ttl, mobile);
         }
         &__text{
-            font-size: map-get($txt, xs);
+            font-size: map-get($txt-size, card, mobile);
         }
         &__button{
-            font-size: map-get($txt, xs);
+            font-size: map-get($txt-size, base, mobile);
         }
         &--alt{
             width: 20rem;
@@ -122,67 +191,71 @@
     .idb-hcard{
         width: 20rem;
         max-height: fit-content;
+        border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
         &__image{
             width: 20rem;
             height: 20rem;
             border-radius: 1.2rem 1.2rem 0rem 0rem;
         }
         &__title{
-            font-size: map-get($ttl, xxs);
+            font-size: map-get($txt-size, card-ttl, mobile);
         }
         &__text{
-            font-size: map-get($txt, xs);
+            font-size: map-get($txt-size, card, mobile);
         }
     }
     .idb-carousel{
         width: 20rem;
         height: 15rem;
         &__title{
-            font-size: map-get($txt, md);
-        }
-        &__image{
-            object-fit: cover;
+            font-size: map-get($txt-size, base, mobile);
         }
     }
     .idb-accordion{
         width: 20rem;
         &__title{
-            font-size: map-get($txt, md);
+            font-size: map-get($txt-size, card, mobile);
         }
         &__text{
-            font-size: map-get($txt, xs);
+            font-size: map-get($txt-size, card, mobile);
         }
     }
     /*horizontal aside card*/
     .idb-expiring{
-       @include card (20rem, fit-content);
+       @include sizing (20rem, fit-content);
+       border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+       margin-top: 2.5rem;
        &__header{
-         font-size: map-get($txt, xs);   
+         font-size: map-get($txt-size, base, mobile);   
         }
         &__title{
-            font-size: map-get($ttl, xxs);
+            font-size: map-get($txt-size, card-ttl, mobile);
         }
         &__text{
-            font-size: map-get($txt, xs);
+            font-size: map-get($txt-size, card, mobile);
         }
         &__button{
-            font-size: map-get($txt, xs);
+            font-size: map-get($txt-size, base, mobile);
         }
     }
     /*horizontal location card*/
     .idb-map{
-       width: 20rem; 
-       height: 20rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        width: 20rem; 
+        height: 35rem;
     }
     .idb-header{
+        margin-top: 1.5rem;
         width: 20rem;
     }
     .idb-contact{
+        margin-bottom: 1.5rem;
         &__title{
-            font-size: map-get($ttl, xxs);
+            font-size: map-get($txt-size, secondary, mobile);
         }
         &__submit{
-            font-size: map-get($txt, xs);
+            font-size: map-get($txt-size, secondary, mobile);
         }
         &--alt{
             width: 20rem;
@@ -191,18 +264,15 @@
     /*footer - general*/
     .idb-end{
         height: fit-content;
-        overflow: visible;
-        &__text{
-            font-size: map-get($ttl, xxs);
-        }
+        overflow: hidden;
         &--close{
-            font-size: map-get($txt, xxs);
+            font-size: map-get($txt-size, secondary, mobile);
             letter-spacing: normal;
         }
     }
     .idb-soc-card{
         &__title{
-            font-size: map-get($txt, xxs);
+            font-size: map-get($txt-size, secondary, mobile);
             color: white;
         }
         &__image{
@@ -210,7 +280,7 @@
             width: 1.5rem;
         }
         &__link{
-            font-size: map-get($txt, xxxs);
+            font-size: map-get($txt-size, secondary, mobile);
         }
     }
 }

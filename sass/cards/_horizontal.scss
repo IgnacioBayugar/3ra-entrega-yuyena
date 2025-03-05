@@ -1,7 +1,9 @@
-.idb-hcard{
-    @include card (40rem, fit-content);
+.idb-hcard{ //card horizontal
+    @include sizing (40rem, fit-content);
+    @include palette ($brown, white);
     margin-bottom: -0.125rem;
     border-radius: 1.2rem 1.2rem 0rem 0rem;
+    border-style: none;
     &__image{
         object-fit: cover;
         border-radius: 1.2rem 0rem 0rem 0rem;
@@ -9,9 +11,9 @@
         max-width: 100%;
     }
     &__title{
-        font-size: map-get($ttl, md);
+        font-size: map-get($txt-size, card-ttl, desk);
     }
     &__text{
-        font-size: map-get($txt, md);
+        font-size: map-get($txt-size, card, desk);
     }
 }

@@ -1,4 +1,4 @@
-.idb-accordion{
+.idb-accordion{ //bs accordion, modificado
     width: 40rem;
     border-top-style: groove;
     border-top-color: white;
@@ -7,23 +7,19 @@
         box-shadow: none;
     }
     &__body{
-        background-color: $brown;
-        color: white;
+        @include palette ($brown, white);
     }
     &__title{
-        font-size: map-get($ttl, sm);
-        background-color: $brown;
-        color: white;
+        font-size: map-get($txt-size, card-ttl, desk);
+        @include palette ($brown, white);
     }
     &__text{
-        font-size: map-get($txt, md);
+        font-size: map-get($txt-size, card, desk);
     }
     &__action{
-        background-color: $brown;
-        color: white;
+        @include palette ($brown, white);
     }
 }
 .accordion-button:not(.collapsed){
-    background-color: $brown;
-    color: white;
+    @include palette ($brown, white);
 }

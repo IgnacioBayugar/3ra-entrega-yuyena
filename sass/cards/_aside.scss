@@ -1,25 +1,19 @@
+/*contenido promocional limitado*/
 .idb-expiring{
-    @include card (40rem, fit-content);
+    @include sizing (40rem, fit-content);
+    @include palette ($brown, white);
     border-radius: 0rem 0rem 1.2rem 1.2rem;
     &__header{
-        font-size: map-get($txt, md);   
+        font-size: map-get($txt-size, secondary, desk);   
     }
     &__title{
-        font-size: map-get($ttl, md);
+        font-size: map-get($txt-size, card-ttl, desk);
     }
     &__text{
-        font-size: map-get($txt, md);
+        font-size: map-get($txt-size, card, desk);
     }
     &__button{
-        font-size: map-get($txt, md);
-        color: $brown;
-        background-color: $orange;
-        border-radius: 0.6rem;
-        border-style: none;
-        &:hover{
-            color: $brown;
-            background-color: $hoverorange;
-            outline-style: none;
-        }
+        @include btn ($orange, white, 0.6rem, none, none);
+        font-size: map-get($txt-size, base, desk);
     }
 }

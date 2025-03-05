@@ -1,6 +1,5 @@
-.idb-carousel{
-    width: 40rem;
-    height: 19.7rem;
+.idb-carousel{ //bs carousel, modificado
+    @include sizing (40rem, 16.65rem);
     border-radius: 1.2rem 1.2rem 0rem 0rem;
     overflow: hidden;
     &__image{
@@ -8,10 +7,9 @@
         max-height: 100%;
     }
     &__header{
-        color: white;
-        background-color: $brown;
+        @include palette ($brown, white);
     }
     &__title{
-        font-size: map-get($ttl, md);
+        font-size: map-get($txt-size, base, desk);
     }
 }

@@ -1,5 +1,6 @@
+/*formularios de comentarios*/
 .idb-contact{
-    &--alt{
+    &--alt{ //formulario especial para la seccion "contacto"
         background-color: $brown;
         width: 40rem;
         border-radius: 0rem 0rem 1.2rem 1.2rem;
@@ -8,18 +9,12 @@
         border-top-width: 0.0625rem;
     }
     &__title{
-        font-size: map-get($ttl, sm);
+        font-size: map-get($txt-size, base, desk);
         color: white;
     }
     &__submit{
-        font-size: map-get($txt, md);
-        background-color: $orange;
-        color: $brown;
-        border-radius: 0.6rem;
-        &:hover{
-            background-color: $hoverorange;
-            color: $brown;
-        }
+        @include btn ($orange, white, 0.6rem, none, none);
+        font-size: map-get($txt-size, base, desk);
     }
 
 }

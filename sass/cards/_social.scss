@@ -1,6 +1,6 @@
-.idb-soc-card{
+.idb-soc-card{ //card especial para redes sociales
     &__title{
-        font-size: map-get($ttl, xxs);
+        font-size: map-get($txt-size, secondary, desk);
         color: white;
     }
     &__image{
@@ -8,6 +8,6 @@
         width: 1.75rem;
     }
     &__link{
-        font-size: map-get($txt, md);
+        font-size: map-get($txt-size, secondary, desk);
     }
 }

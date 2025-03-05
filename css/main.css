@@ -13,40 +13,43 @@
   width: fit-content;
 }
 .idb-nav__title {
-  font-size: 3rem;
+  font-size: 2.75rem;
+  color: white;
+  letter-spacing: 0.5rem;
+}
+.idb-nav__subtitle {
+  font-size: 1.5rem;
   color: white;
   letter-spacing: 0.3rem;
 }
-.idb-nav__slogan {
-  font-size: 1.5rem;
-  color: white;
-  letter-spacing: 0.4rem;
-}
 .idb-nav__button {
-  font-size: 1.125rem;
+  background-color: #F49867;
+  color: white;
+  border-radius: none;
+  border-style: none;
+  border-color: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   width: 15rem;
   display: flex;
   justify-content: center;
-  color: #65524D;
-  background-color: #F49867;
 }
 .idb-nav__button:hover {
-  color: #65524D;
-  background-color: #fcad83;
-  outline-style: none;
+  background-color: rgb(240.5582822086, 119.773006135, 55.4417177914);
+  transform: scale(1.05);
 }
 .idb-nav__button.idb-active {
-  background-color: #e49062;
+  background-color: rgb(241.590797546, 129.4411042945, 69.709202454);
 }
 .idb-nav__button--start {
   border-top-left-radius: 0.6rem;
   border-bottom-left-radius: 0.6rem;
-  margin-right: 0.125rem;
+  margin-right: 0.5rem;
 }
 .idb-nav__button--end {
   border-top-right-radius: 0.6rem;
   border-bottom-right-radius: 0.6rem;
-  margin-left: 0.125rem;
+  margin-left: 0.5rem;
 }
 
 .ib-body {
@@ -62,11 +65,9 @@
   color: white;
 }
 .idb-end__text {
-  font-size: 1.125rem;
   color: white;
 }
 .idb-end--close {
-  font-size: 0.875rem;
   letter-spacing: 0.3rem;
   height: 2.5rem;
   color: white;
@@ -77,11 +78,11 @@
   height: fit-content;
   background-color: #65524D;
   color: white;
-  max-height: 25rem;
-  overflow: hidden;
   border-radius: 1.2rem;
-  border-color: #65524D;
-  border-width: 0.1rem;
+  border-style: none;
+  border-color: none;
+  border-width: none;
+  overflow: hidden;
 }
 .idb-card__image {
   object-fit: cover;
@@ -90,33 +91,35 @@
   max-width: 100%;
 }
 .idb-card__title {
-  font-size: 1.25rem;
+  font-size: 1.625rem;
 }
 .idb-card__text {
-  font-size: 1.125rem;
+  font-size: 1rem;
   text-align: justify;
   hyphens: auto;
 }
 .idb-card__button {
-  font-size: 1.125rem;
-  border-radius: 0.6rem;
-  color: #65524D;
   background-color: #F49867;
+  color: white;
+  border-radius: 0.6rem;
+  border-style: none;
+  border-color: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1.125rem;
 }
 .idb-card__button:hover {
-  background-color: #fcad83;
-  color: #65524D;
+  background-color: rgb(240.5582822086, 119.773006135, 55.4417177914);
+  transform: scale(1.05);
 }
 .idb-card--alt {
   width: fit-content;
   height: fit-content;
-  background-color: #65524D;
-  color: white;
-  max-height: none;
-  border-style: groove;
-  border-color: #65524D;
-  border-width: 0.1rem;
   border-radius: 1.2rem;
+  border-style: none;
+  border-color: none;
+  border-width: none;
+  max-height: none;
 }
 .idb-card--alt .idb-card__image {
   height: 18rem;
@@ -129,6 +132,7 @@
   color: white;
   margin-bottom: -0.125rem;
   border-radius: 1.2rem 1.2rem 0rem 0rem;
+  border-style: none;
 }
 .idb-hcard__image {
   object-fit: cover;
@@ -137,14 +141,14 @@
   max-width: 100%;
 }
 .idb-hcard__title {
-  font-size: 2.25rem;
+  font-size: 1.625rem;
 }
 .idb-hcard__text {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .idb-soc-card__title {
-  font-size: 1.25rem;
+  font-size: 0.9375rem;
   color: white;
 }
 .idb-soc-card__image {
@@ -152,34 +156,10 @@
   width: 1.75rem;
 }
 .idb-soc-card__link {
-  font-size: 1.125rem;
+  font-size: 0.9375rem;
 }
 
-.idb-category {
-  background-color: #65524D;
-  color: white;
-  border-radius: 0rem 0rem 1.2rem 1.2rem;
-}
-.idb-category__title {
-  font-size: 1.25rem;
-  letter-spacing: 0.2rem;
-}
-
-.idb-gtext {
-  font-size: medium;
-  color: black;
-}
-
-.idb-header {
-  width: 40rem;
-  background-color: #65524D;
-  border-radius: 1.2rem 1.2rem 0rem 0rem;
-}
-.idb-header__headline {
-  color: white;
-  font-size: large;
-}
-
+/*contenido promocional limitado*/
 .idb-expiring {
   width: 40rem;
   height: fit-content;
@@ -188,27 +168,30 @@
   border-radius: 0rem 0rem 1.2rem 1.2rem;
 }
 .idb-expiring__header {
-  font-size: 1.125rem;
+  font-size: 0.9375rem;
 }
 .idb-expiring__title {
-  font-size: 2.25rem;
+  font-size: 1.625rem;
 }
 .idb-expiring__text {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 .idb-expiring__button {
-  font-size: 1.125rem;
-  color: #65524D;
   background-color: #F49867;
+  color: white;
   border-radius: 0.6rem;
   border-style: none;
+  border-color: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1.125rem;
 }
 .idb-expiring__button:hover {
-  color: #65524D;
-  background-color: #fcad83;
-  outline-style: none;
+  background-color: rgb(240.5582822086, 119.773006135, 55.4417177914);
+  transform: scale(1.05);
 }
 
+/*formularios de comentarios*/
 .idb-contact--alt {
   background-color: #65524D;
   width: 40rem;
@@ -218,18 +201,22 @@
   border-top-width: 0.0625rem;
 }
 .idb-contact__title {
-  font-size: 2rem;
+  font-size: 1.125rem;
   color: white;
 }
 .idb-contact__submit {
-  font-size: 1.125rem;
   background-color: #F49867;
-  color: #65524D;
+  color: white;
   border-radius: 0.6rem;
+  border-style: none;
+  border-color: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1.125rem;
 }
 .idb-contact__submit:hover {
-  background-color: #fcad83;
-  color: #65524D;
+  background-color: rgb(240.5582822086, 119.773006135, 55.4417177914);
+  transform: scale(1.05);
 }
 
 .idb-accordion {
@@ -246,12 +233,12 @@
   color: white;
 }
 .idb-accordion__title {
-  font-size: 2rem;
+  font-size: 1.625rem;
   background-color: #65524D;
   color: white;
 }
 .idb-accordion__text {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 .idb-accordion__action {
   background-color: #65524D;
@@ -265,7 +252,7 @@
 
 .idb-carousel {
   width: 40rem;
-  height: 19.7rem;
+  height: 16.65rem;
   border-radius: 1.2rem 1.2rem 0rem 0rem;
   overflow: hidden;
 }
@@ -274,11 +261,11 @@
   max-height: 100%;
 }
 .idb-carousel__header {
-  color: white;
   background-color: #65524D;
+  color: white;
 }
 .idb-carousel__title {
-  font-size: 2.25rem;
+  font-size: 1.125rem;
 }
 
 .idb-map {
@@ -290,95 +277,176 @@
   border-radius: 1.2rem;
 }
 
+.idb-category {
+  background-color: #65524D;
+  color: white;
+  border-radius: 0rem 0rem 1.2rem 1.2rem;
+}
+.idb-category__title {
+  font-size: 0.9375rem;
+  letter-spacing: 0.2rem;
+}
+
+.idb-header {
+  width: 40rem;
+  background-color: #65524D;
+  border-radius: 1.2rem 1.2rem 0rem 0rem;
+}
+.idb-header__headline {
+  color: white;
+  font-size: large;
+}
+
 /*MEDIA QUERIES*/
-@media (max-width: 992px) {
-  /*RESET*/
-  * {
-    overflow-y: visible;
+@media (min-width: 576px) and (max-width: 991px) {
+  .idb-nav__title {
+    font-size: 2.25rem;
   }
-  /*product card*/
+  .idb-nav__subtitle {
+    font-size: 1.25rem;
+  }
+  .idb-nav__button {
+    font-size: 1rem;
+    width: 12.5rem;
+  }
+  .idb-category__title {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
   .idb-card {
-    width: 30rem;
+    width: 50rem;
     height: fit-content;
     max-height: none;
     margin-bottom: 1rem;
     overflow: visible;
-    border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
   }
   .idb-card__image {
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-radius: 1.2rem 0rem 0rem 1.2rem;
   }
-  .idb-card--alt .idb-card__image {
-    border-radius: 0rem 1.2rem 0rem 0rem;
-  }
   .idb-card__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .idb-card__text {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
+  }
+  .idb-card__button {
+    font-size: 1rem;
+  }
+  .idb-card--alt {
+    width: 50rem;
+  }
+  .idb-card--alt .idb-card__image {
+    width: 100%;
+    border-radius: 1.2rem 1.2rem 0rem 0rem;
   }
   /*horizontal autor card*/
   .idb-hcard {
-    width: 40rem;
+    width: 50rem;
     height: fit-content;
-    margin-bottom: 1rem;
-    overflow: visible;
-    border-radius: 1.2rem;
+    border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
   }
   .idb-hcard__image {
+    height: 100%;
     border-radius: 1.2rem 0rem 0rem 1.2rem;
   }
+  .idb-hcard__title {
+    font-size: 1.5rem;
+  }
+  .idb-hcard__text {
+    font-size: 0.9375rem;
+  }
+  .idb-carousel {
+    width: 50rem;
+    height: 18rem;
+  }
+  .idb-carousel__title {
+    font-size: 1rem;
+  }
   .idb-accordion {
-    width: 40rem;
+    width: 50rem;
+  }
+  .idb-accordion__title {
+    font-size: 1rem;
+  }
+  .idb-accordion__text {
+    font-size: 1rem;
   }
   /*horizontal aside card*/
   .idb-expiring {
-    width: 40rem;
+    width: 50rem;
     height: fit-content;
-    background-color: #65524D;
-    color: white;
-    border-radius: 1.2rem;
-    margin-top: 2rem;
+    border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+    margin-top: 2.5rem;
+  }
+  .idb-expiring__header {
+    font-size: 1rem;
+  }
+  .idb-expiring__title {
+    font-size: 1.5rem;
+  }
+  .idb-expiring__text {
+    font-size: 0.9375rem;
+  }
+  .idb-expiring__button {
+    font-size: 1rem;
   }
   /*horizontal location card*/
   .idb-map {
-    width: 40rem;
-    margin-bottom: 2rem;
+    width: 50rem;
+    height: 35rem;
+    margin-top: 0.5rem;
+  }
+  .idb-header {
+    width: 50rem;
+    margin-top: 1.5rem;
+  }
+  .idb-contact {
+    margin-bottom: 1.5rem;
+  }
+  .idb-contact__title {
+    font-size: 0.875;
+  }
+  .idb-contact__submit {
+    font-size: 0.875;
+  }
+  .idb-contact--alt {
+    width: 50rem;
   }
   /*footer - general*/
   .idb-end {
     height: fit-content;
-    overflow-y: visible;
+    overflow: hidden;
   }
-  .idb-soc-card {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 1rem;
+  .idb-end--close {
+    font-size: 0.875;
+    letter-spacing: normal;
   }
-  .idb-contact div {
-    width: fit-content;
+  .idb-soc-card__title {
+    font-size: 0.875;
+    color: white;
   }
-  /*general components*/
+  .idb-soc-card__image {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .idb-soc-card__link {
+    font-size: 0.875;
+  }
 }
-@media (max-width: 576px) {
-  .idb-nav__brand {
-    font-size: 1.5rem;
-  }
-  .idb-nav__slogan {
-    font-size: 1.25rem;
-  }
+@media (max-width: 575px) {
   .idb-nav__button {
-    font-size: 0.875rem;
     width: 7rem;
   }
   .idb-category__title {
-    font-size: 1.2rem;
+    font-size: 0.875rem;
     letter-spacing: normal;
   }
   .idb-card {
     width: 20rem;
     height: fit-content;
+    max-height: none;
     margin-bottom: 1rem;
     overflow: visible;
   }
@@ -388,7 +456,7 @@
     border-radius: 1.2rem 1.2rem 0rem 0rem;
   }
   .idb-card__title {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
   }
   .idb-card__text {
     font-size: 0.875rem;
@@ -407,6 +475,7 @@
   .idb-hcard {
     width: 20rem;
     max-height: fit-content;
+    border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
   }
   .idb-hcard__image {
     width: 20rem;
@@ -414,7 +483,7 @@
     border-radius: 1.2rem 1.2rem 0rem 0rem;
   }
   .idb-hcard__title {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
   }
   .idb-hcard__text {
     font-size: 0.875rem;
@@ -424,16 +493,13 @@
     height: 15rem;
   }
   .idb-carousel__title {
-    font-size: 1.125rem;
-  }
-  .idb-carousel__image {
-    object-fit: cover;
+    font-size: 0.875rem;
   }
   .idb-accordion {
     width: 20rem;
   }
   .idb-accordion__title {
-    font-size: 1.125rem;
+    font-size: 0.875rem;
   }
   .idb-accordion__text {
     font-size: 0.875rem;
@@ -442,14 +508,14 @@
   .idb-expiring {
     width: 20rem;
     height: fit-content;
-    background-color: #65524D;
-    color: white;
+    border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+    margin-top: 2.5rem;
   }
   .idb-expiring__header {
     font-size: 0.875rem;
   }
   .idb-expiring__title {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
   }
   .idb-expiring__text {
     font-size: 0.875rem;
@@ -459,17 +525,23 @@
   }
   /*horizontal location card*/
   .idb-map {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
     width: 20rem;
-    height: 20rem;
+    height: 35rem;
   }
   .idb-header {
+    margin-top: 1.5rem;
     width: 20rem;
   }
+  .idb-contact {
+    margin-bottom: 1.5rem;
+  }
   .idb-contact__title {
-    font-size: 1.25rem;
+    font-size: 0.8125rem;
   }
   .idb-contact__submit {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
   }
   .idb-contact--alt {
     width: 20rem;
@@ -477,17 +549,14 @@
   /*footer - general*/
   .idb-end {
     height: fit-content;
-    overflow: visible;
-  }
-  .idb-end__text {
-    font-size: 1.25rem;
+    overflow: hidden;
   }
   .idb-end--close {
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     letter-spacing: normal;
   }
   .idb-soc-card__title {
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     color: white;
   }
   .idb-soc-card__image {
@@ -495,7 +564,7 @@
     width: 1.5rem;
   }
   .idb-soc-card__link {
-    font-size: 0.65rem;
+    font-size: 0.8125rem;
   }
 }
 

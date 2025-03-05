@@ -1,17 +1,9 @@
 $gfont: "Lora", serif;
-$ttl: (
-    xl: 3rem,
-    lg: 2.5rem,
-    md: 2.25rem,
-    sm: 2rem,
-    xs: 1.5rem,
-    xxs: 1.25rem,
-    xxxs: 1.20rem
-);
-$txt: (
-    md: 1.125rem,
-    sm: 1rem,
-    xs: 0.875rem,
-    xxs: 0.75rem,
-    xxxs: 0.65rem
+$txt-size: (
+    brand: (desk: 2.75rem, tablet: 2.25rem, mobile: 2rem),
+    brand-alt: (desk: 1.50rem, tablet: 1.25rem, mobile: 1rem),
+    card-ttl: (desk: 1.625rem, tablet: 1.5rem, mobile: 1.375rem),
+    card: (desk: 1rem, tablet: 0.9375rem, mobile: 0.875rem),
+    base: (desk: 1.125rem, tablet: 1rem, mobile: 0.875rem),
+    secondary: (desk: 0.9375rem, tablet: 0.875, mobile: 0.8125rem)
 );
