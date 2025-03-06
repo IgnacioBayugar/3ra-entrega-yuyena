@@ -171,13 +171,14 @@
   border-radius: 0rem 0rem 1.2rem 1.2rem;
 }
 .idb-expiring__header {
-  font-size: 0.9375rem;
+  font-size: 1rem;
 }
 .idb-expiring__title {
   font-size: 1.625rem;
 }
 .idb-expiring__text {
   font-size: 1rem;
+  padding-top: 0.5rem;
 }
 .idb-expiring__button {
   background-color: #DF5451;
