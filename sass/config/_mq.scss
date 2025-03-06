@@ -128,7 +128,6 @@
     .idb-soc-card{
         &__title{
             font-size: map-get($txt-size, secondary, tablet);
-            color: white;
         }
         &__image{
             height: 1.5rem;
@@ -182,7 +181,7 @@
         &--alt{
             width: 20rem;
             .idb-card__image{
-                width: 19.90rem;
+                width: 20rem;
                 border-radius: 1.2rem 1.2rem 0rem 0rem;
             }
         }
@@ -273,7 +272,6 @@
     .idb-soc-card{
         &__title{
             font-size: map-get($txt-size, secondary, mobile);
-            color: white;
         }
         &__image{
             height: 1.5rem;

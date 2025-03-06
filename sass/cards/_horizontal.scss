@@ -1,6 +1,6 @@
 .idb-hcard{ //card horizontal
     @include sizing (40rem, fit-content);
-    @include palette ($brown, white);
+    @include palette ($primary, $fontcolor);
     margin-bottom: -0.125rem;
     border-radius: 1.2rem 1.2rem 0rem 0rem;
     border-style: none;

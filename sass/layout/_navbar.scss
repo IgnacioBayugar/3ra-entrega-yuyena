@@ -1,27 +1,29 @@
 .idb-nav{ //bs navbar, modificada
-    background-color: $brown;
+    background-color: $primary;
     &__brand{
         overflow: hidden;
         width: fit-content;
     }
     &__title{
         font-size: map-get($txt-size, brand, desk);
-        color: white;
+        font-family: $title;
+        color: $fontcolor;
         letter-spacing: 0.5rem;
     }
     &__subtitle{
         font-size: map-get($txt-size, brand-alt, desk);
-        color: white;
+        font-family: $title;
+        color: $fontcolor;
         letter-spacing: 0.3rem;
     }
     &__button{
-        @include btn ($orange, white, none, none, none);
+        @include btn ($tertiary, $fontcolor, none, none, none);
         font-size: map-get($txt-size, btn, desk);
         width: 15rem;
         display: flex;
         justify-content: center;
         &.idb-active{
-            background-color: darken($orange, 7%);
+            background-color: darken($tertiary, 7%);
         }
         &--start{
             border-top-left-radius: 0.6rem;

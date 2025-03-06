@@ -1,12 +1,12 @@
 * {
-  font-family: "Lora", serif;
+  font-family: Nunito, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .idb-nav {
-  background-color: #65524D;
+  background-color: #723E45;
 }
 .idb-nav__brand {
   overflow: hidden;
@@ -14,17 +14,19 @@
 }
 .idb-nav__title {
   font-size: 2.75rem;
-  color: white;
+  font-family: Marcellus, serif;
+  color: #FFF4E9;
   letter-spacing: 0.5rem;
 }
 .idb-nav__subtitle {
   font-size: 1.5rem;
-  color: white;
+  font-family: Marcellus, serif;
+  color: #FFF4E9;
   letter-spacing: 0.3rem;
 }
 .idb-nav__button {
-  background-color: #F49867;
-  color: white;
+  background-color: #DF5451;
+  color: #FFF4E9;
   border-radius: none;
   border-style: none;
   border-color: none;
@@ -35,11 +37,12 @@
   justify-content: center;
 }
 .idb-nav__button:hover {
-  background-color: rgb(240.5582822086, 119.773006135, 55.4417177914);
+  color: #FFF4E9;
+  background-color: rgb(213.6990291262, 42.9854368932, 39.3009708738);
   transform: scale(1.05);
 }
 .idb-nav__button.idb-active {
-  background-color: rgb(241.590797546, 129.4411042945, 69.709202454);
+  background-color: rgb(217.454368932, 54.3655339806, 50.845631068);
 }
 .idb-nav__button--start {
   border-top-left-radius: 0.6rem;
@@ -53,31 +56,32 @@
 }
 
 .ib-body {
-  background-color: #fcad83;
+  background-color: #FFC4A3;
 }
 
 .idb-end {
-  background-color: #65524D;
+  background-color: #723E45;
   height: 4.0625rem;
   overflow: visible;
 }
 .idb-end__title {
-  color: white;
+  color: #FFF4E9;
+  font-size: 0.9375rem;
 }
 .idb-end__text {
-  color: white;
+  color: #FFF4E9;
 }
 .idb-end--close {
   letter-spacing: 0.3rem;
   height: 2.5rem;
-  color: white;
+  color: #FFF4E9;
 }
 
 .idb-card {
   width: fit-content;
   height: fit-content;
-  background-color: #65524D;
-  color: white;
+  background-color: #723E45;
+  color: #FFF4E9;
   border-radius: 1.2rem;
   border-style: none;
   border-color: none;
@@ -99,8 +103,8 @@
   hyphens: auto;
 }
 .idb-card__button {
-  background-color: #F49867;
-  color: white;
+  background-color: #DF5451;
+  color: #FFF4E9;
   border-radius: 0.6rem;
   border-style: none;
   border-color: none;
@@ -109,7 +113,8 @@
   font-size: 1.125rem;
 }
 .idb-card__button:hover {
-  background-color: rgb(240.5582822086, 119.773006135, 55.4417177914);
+  color: #FFF4E9;
+  background-color: rgb(213.6990291262, 42.9854368932, 39.3009708738);
   transform: scale(1.05);
 }
 .idb-card--alt {
@@ -128,8 +133,8 @@
 .idb-hcard {
   width: 40rem;
   height: fit-content;
-  background-color: #65524D;
-  color: white;
+  background-color: #723E45;
+  color: #FFF4E9;
   margin-bottom: -0.125rem;
   border-radius: 1.2rem 1.2rem 0rem 0rem;
   border-style: none;
@@ -149,7 +154,7 @@
 
 .idb-soc-card__title {
   font-size: 0.9375rem;
-  color: white;
+  color: #FFF4E9;
 }
 .idb-soc-card__image {
   height: 1.75rem;
@@ -163,8 +168,8 @@
 .idb-expiring {
   width: 40rem;
   height: fit-content;
-  background-color: #65524D;
-  color: white;
+  background-color: #723E45;
+  color: #FFF4E9;
   border-radius: 0rem 0rem 1.2rem 1.2rem;
 }
 .idb-expiring__header {
@@ -177,8 +182,8 @@
   font-size: 1rem;
 }
 .idb-expiring__button {
-  background-color: #F49867;
-  color: white;
+  background-color: #DF5451;
+  color: #FFF4E9;
   border-radius: 0.6rem;
   border-style: none;
   border-color: none;
@@ -187,13 +192,14 @@
   font-size: 1.125rem;
 }
 .idb-expiring__button:hover {
-  background-color: rgb(240.5582822086, 119.773006135, 55.4417177914);
+  color: #FFF4E9;
+  background-color: rgb(213.6990291262, 42.9854368932, 39.3009708738);
   transform: scale(1.05);
 }
 
 /*formularios de comentarios*/
 .idb-contact--alt {
-  background-color: #65524D;
+  background-color: #723E45;
   width: 40rem;
   border-radius: 0rem 0rem 1.2rem 1.2rem;
   border-top-style: groove;
@@ -202,11 +208,11 @@
 }
 .idb-contact__title {
   font-size: 1.125rem;
-  color: white;
+  color: #FFF4E9;
 }
 .idb-contact__submit {
-  background-color: #F49867;
-  color: white;
+  background-color: #DF5451;
+  color: #FFF4E9;
   border-radius: 0.6rem;
   border-style: none;
   border-color: none;
@@ -215,7 +221,8 @@
   font-size: 1.125rem;
 }
 .idb-contact__submit:hover {
-  background-color: rgb(240.5582822086, 119.773006135, 55.4417177914);
+  color: #FFF4E9;
+  background-color: rgb(213.6990291262, 42.9854368932, 39.3009708738);
   transform: scale(1.05);
 }
 
@@ -229,30 +236,30 @@
   box-shadow: none;
 }
 .idb-accordion__body {
-  background-color: #65524D;
-  color: white;
+  background-color: #723E45;
+  color: #FFF4E9;
 }
 .idb-accordion__title {
-  font-size: 1.625rem;
-  background-color: #65524D;
-  color: white;
+  font-size: 1rem;
+  background-color: #723E45;
+  color: #FFF4E9;
 }
 .idb-accordion__text {
   font-size: 1rem;
 }
 .idb-accordion__action {
-  background-color: #65524D;
-  color: white;
+  background-color: #723E45;
+  color: #FFF4E9;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #65524D;
-  color: white;
+  background-color: #723E45;
+  color: #FFF4E9;
 }
 
 .idb-carousel {
   width: 40rem;
-  height: 16.65rem;
+  height: 16.5rem;
   border-radius: 1.2rem 1.2rem 0rem 0rem;
   overflow: hidden;
 }
@@ -261,8 +268,8 @@
   max-height: 100%;
 }
 .idb-carousel__header {
-  background-color: #65524D;
-  color: white;
+  background-color: #723E45;
+  color: #FFF4E9;
 }
 .idb-carousel__title {
   font-size: 1.125rem;
@@ -272,14 +279,14 @@
   width: 40rem;
   height: 40rem;
   border-style: groove;
-  border-color: #65524D;
+  border-color: #723E45;
   border-width: 0.25rem;
   border-radius: 1.2rem;
 }
 
 .idb-category {
-  background-color: #65524D;
-  color: white;
+  background-color: #723E45;
+  color: #FFF4E9;
   border-radius: 0rem 0rem 1.2rem 1.2rem;
 }
 .idb-category__title {
@@ -289,11 +296,11 @@
 
 .idb-header {
   width: 40rem;
-  background-color: #65524D;
+  background-color: #723E45;
   border-radius: 1.2rem 1.2rem 0rem 0rem;
 }
 .idb-header__headline {
-  color: white;
+  color: #FFF4E9;
   font-size: large;
 }
 
@@ -425,7 +432,6 @@
   }
   .idb-soc-card__title {
     font-size: 0.875;
-    color: white;
   }
   .idb-soc-card__image {
     height: 1.5rem;
@@ -468,7 +474,7 @@
     width: 20rem;
   }
   .idb-card--alt .idb-card__image {
-    width: 19.9rem;
+    width: 20rem;
     border-radius: 1.2rem 1.2rem 0rem 0rem;
   }
   /*horizontal autor card*/
@@ -557,7 +563,6 @@
   }
   .idb-soc-card__title {
     font-size: 0.8125rem;
-    color: white;
   }
   .idb-soc-card__image {
     height: 1.5rem;

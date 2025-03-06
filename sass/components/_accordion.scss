@@ -7,19 +7,19 @@
         box-shadow: none;
     }
     &__body{
-        @include palette ($brown, white);
+        @include palette ($primary, $fontcolor);
     }
     &__title{
-        font-size: map-get($txt-size, card-ttl, desk);
-        @include palette ($brown, white);
+        font-size: map-get($txt-size, card, desk);
+        @include palette ($primary, $fontcolor);
     }
     &__text{
         font-size: map-get($txt-size, card, desk);
     }
     &__action{
-        @include palette ($brown, white);
+        @include palette ($primary, $fontcolor);
     }
 }
 .accordion-button:not(.collapsed){
-    @include palette ($brown, white);
+    @include palette ($primary, $fontcolor);
 }

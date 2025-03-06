@@ -1,6 +1,6 @@
 .idb-card{ //card general para productos
     @include sizing (fit-content, fit-content);
-    @include palette ($brown, white);
+    @include palette ($primary, $fontcolor);
     @include borders (1.2rem, none, none, none);
     overflow: hidden;
     &__image{
@@ -18,7 +18,7 @@
         hyphens: auto;
     }
     &__button{
-        @include btn ($orange, white, 0.6rem, none, none);
+        @include btn ($tertiary, $fontcolor, 0.6rem, none, none);
         font-size: map-get($txt-size, base, desk);
     }
     &--alt{

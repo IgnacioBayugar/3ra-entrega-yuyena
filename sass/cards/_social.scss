@@ -1,7 +1,7 @@
 .idb-soc-card{ //card especial para redes sociales
     &__title{
         font-size: map-get($txt-size, secondary, desk);
-        color: white;
+        color: $fontcolor;
     }
     &__image{
         height: 1.75rem;

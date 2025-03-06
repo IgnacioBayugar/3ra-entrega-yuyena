@@ -22,6 +22,7 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover{
+        color: $fontcolor;
         background-color: darken($bg-color, 10%);
         transform: scale(1.05);
     }

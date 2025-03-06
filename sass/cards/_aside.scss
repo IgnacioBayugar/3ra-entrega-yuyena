@@ -1,7 +1,7 @@
 /*contenido promocional limitado*/
 .idb-expiring{
     @include sizing (40rem, fit-content);
-    @include palette ($brown, white);
+    @include palette ($primary, $fontcolor);
     border-radius: 0rem 0rem 1.2rem 1.2rem;
     &__header{
         font-size: map-get($txt-size, secondary, desk);   
@@ -13,7 +13,7 @@
         font-size: map-get($txt-size, card, desk);
     }
     &__button{
-        @include btn ($orange, white, 0.6rem, none, none);
+        @include btn ($tertiary, $fontcolor, 0.6rem, none, none);
         font-size: map-get($txt-size, base, desk);
     }
 }
