@@ -10,6 +10,8 @@
     width: 40rem;
     background-color: $primary;
     border-radius: 1.2rem 1.2rem 0rem 0rem;
+    display: flex;
+    justify-content: center;
     &__headline{
         color: $fontcolor;
         font-size: large;

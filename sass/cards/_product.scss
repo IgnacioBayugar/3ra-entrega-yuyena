@@ -23,10 +23,11 @@
     }
     &--alt{
         @include sizing (fit-content, fit-content);
-        @include borders (1.2rem, none, none, none);
         max-height: none;
         .idb-card__image{
             height: 18rem;
+            max-width: 100%;
+            border-radius: 1.2rem 1.2rem 0rem 0rem;
         }
     }
 }
